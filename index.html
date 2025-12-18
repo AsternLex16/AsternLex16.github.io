@@ -1,13 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Alexis | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial; background:#0f172a; color:white; text-align:center; padding-top:20vh">
-  <h1>👋 Hi, I'm Alexis</h1>
-  <p>Tech Portfolio · Data · Systems · Engineering</p>
-  <p>🚀 Coming soon</p>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Portafolio.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#portfolio">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Hola, soy</h3>
+            <h1>Tu Nombre</h1>
+            <p>Soy <span class="typing-text"></span></p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="#contact" class="btn">Contáctame</a>
+        </div>
+    </section>
+
+    <section id="about" class="about hidden">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>Mí</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Ingeniero & Desarrollador</h3>
+                    <p>Soy un apasionado por la tecnología y la ingeniería de sistemas. Me especializo en crear soluciones eficientes y elegantes. Me encanta aprender nuevas herramientas como Python, arquitecturas de computadoras y modelado de software.</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML/CSS</div>
+                        <div class="skill-item"><i class="fas fa-project-diagram"></i> BPMN/UML</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio hidden">
+        <div class="container">
+            <h2 class="section-title">Mis <span>Proyectos</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <div class="portfolio-layer">
+                        <h4>Análisis de Datos</h4>
+                        <p>Visualización de datos usando Python y Matplotlib para analizar tendencias.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <div class="portfolio-layer">
+                        <h4>Sistema de Gestión</h4>
+                        <p>Modelado de procesos de negocio (BPMN) para una empresa logística.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <div class="portfolio-layer">
+                        <h4>Arquitectura Hardware</h4>
+                        <p>Simulación de microprocesadores y manejo de memoria.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact hidden">
+        <h2 class="section-title">Contáctame</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre Completo">
+                <input type="email" placeholder="Email">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2025 | Diseñado con HTML, CSS y JS</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
