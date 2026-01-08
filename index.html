@@ -3,103 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Profesional</title>
+    <title>Portafolio de Joseph Moreno</title>
+    <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tipografía principal -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Librería AOS para animaciones al hacer scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- Hoja de estilos propia -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Navegación principal -->
     <nav class="navbar">
         <div class="logo">Portafolio</div>
         <ul class="nav-links">
             <li><a href="#home">Inicio</a></li>
             <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#portfolio">Proyectos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#cv">CV</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
+        <!-- Icono hamburguesa para móviles -->
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
+    <!-- Sección hero/inicio -->
+    <header id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
             <h3>Hola, soy</h3>
             <h1>Joseph Moreno</h1>
             <p>Soy <span class="typing-text"></span></p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
             <a href="#contact" class="btn">Contáctame</a>
         </div>
-    </section>
+    </header>
 
-    <section id="about" class="about hidden">
+    <!-- Sobre mí -->
+    <section id="about" class="about" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Sobre <span>Mí</span></h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Ingeniero Empresarial y de Sistemas</h3>
-                    <p>Soy un apasionado por la tecnología y la ingeniería de sistemas. Me especializo en crear soluciones eficientes y elegantes. Me encanta aprender nuevas herramientas como Python, arquitecturas de computadoras y modelado de software.</p>
-                    <div class="skills-grid">
-                        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
-                        <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
-                        <div class="skill-item"><i class="fab fa-html5"></i> HTML/CSS</div>
-                        <div class="skill-item"><i class="fas fa-project-diagram"></i> BPMN/UML</div>
+            <p class="about-text">
+                Ingeniero empresarial y de sistemas apasionado por la tecnología. Me especializo en crear soluciones eficientes y elegantes y disfruto aprender nuevas herramientas como Python, arquitecturas de computadoras y modelado de software.
+            </p>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Mis <span>Habilidades</span></h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3><i class="fab fa-python"></i> Python</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="fas fa-database"></i> SQL</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="fab fa-html5"></i> HTML/CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="fas fa-project-diagram"></i> BPMN/UML</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="65%"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio hidden">
+    <!-- Experiencia -->
+    <section id="experience" class="experience" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Mi <span>Experiencia</span></h2>
+            <ul class="timeline">
+                <li>
+                    <h3>2025 – Presente</h3>
+                    <p>Posición actual — Empresa XYZ. Diseño de soluciones software y liderazgo de equipos de desarrollo.</p>
+                </li>
+                <li>
+                    <h3>2023 – 2024</h3>
+                    <p>Analista de Sistemas — Empresa ABC. Análisis y optimización de procesos.</p>
+                </li>
+                <li>
+                    <h3>2021 – 2022</h3>
+                    <p>Practicante en Ingeniería — Universidad. Desarrollo de proyectos académicos y de investigación.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="projects" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Mis <span>Proyectos</span></h2>
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <div class="portfolio-layer">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
+                    <div class="project-info">
                         <h4>Análisis de Datos</h4>
                         <p>Visualización de datos usando Python y Matplotlib para analizar tendencias.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-box">
-                    <div class="portfolio-layer">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
+                    <div class="project-info">
                         <h4>Sistema de Gestión</h4>
                         <p>Modelado de procesos de negocio (BPMN) para una empresa logística.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <div class="portfolio-box">
-                    <div class="portfolio-layer">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
+                    <div class="project-info">
                         <h4>Arquitectura Hardware</h4>
                         <p>Simulación de microprocesadores y manejo de memoria.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact hidden">
-        <h2 class="section-title">Contáctame</h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Nombre Completo">
-                <input type="email" placeholder="Email">
-            </div>
-            <textarea cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
-            <input type="submit" value="Enviar Mensaje" class="btn">
-        </form>
+    <!-- Sección CV -->
+    <section id="cv" class="cv-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Mi <span>Currículum</span></h2>
+            <p>Puedes descargar mi CV completo en PDF para más detalles sobre mi formación y experiencia.</p>
+            <a href="cv.pdf" class="btn" download>Descargar CV</a>
+        </div>
     </section>
 
+    <!-- Contacto -->
+    <section id="contact" class="contact" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" placeholder="Nombre Completo" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <textarea cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+                <input type="submit" value="Enviar Mensaje" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
-        <p>Copyright &copy; 2025 | Diseñado con HTML, CSS y JS</p>
+        <p>&copy; 2026 | Diseñado con ❤ usando HTML, CSS y JS</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
 </body>
 </html>
