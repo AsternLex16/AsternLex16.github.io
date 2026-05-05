@@ -128,8 +128,8 @@
     "spanishText": "Comunicación clara para documentación, reportes técnicos, seguimiento de bugs y coordinación de producto.",
     "englishTitle": "Inglés",
     "englishText": "Formación en el Centro de Idiomas UCSUR con metodología Cambridge. Lectura técnica y comunicación funcional en contextos digitales.",
-    "siteTitle": "Sitio adaptable",
-    "siteText": "El portfolio detecta automáticamente el idioma del navegador y carga ES o EN desde un diccionario de keys preparado para futuros idiomas."
+    "siteTitle": "Arquitectura limpia",
+    "siteText": "Estructura separada por responsabilidades: contenido traducible en JSON, scripts modulares, estilos centralizados y assets organizados para facilitar mantenimiento y escalabilidad."
   },
   "contact": {
     "eyebrow": "Contacto",

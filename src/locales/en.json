@@ -128,8 +128,8 @@
     "spanishText": "Clear communication for documentation, technical reports, bug follow-up, and product coordination.",
     "englishTitle": "English",
     "englishText": "Training at UCSUR Language Center with Cambridge methodology. Technical reading and functional communication in digital contexts.",
-    "siteTitle": "Adaptive site",
-    "siteText": "The portfolio automatically detects the browser language and loads ES or EN from a key-based dictionary prepared for future languages."
+    "siteTitle": "Clean architecture",
+    "siteText": "Structure separated by responsibility: translatable content in JSON, modular scripts, centralized styles, and organized assets to make maintenance and scaling easier."
   },
   "contact": {
     "eyebrow": "Contact",
