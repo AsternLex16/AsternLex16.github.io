@@ -137,6 +137,61 @@ a {
     cursor: pointer;
 }
 
+.language-toggle {
+    position: relative;
+    display: grid;
+    width: 82px;
+    height: 44px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+    font: inherit;
+    font-weight: 800;
+    overflow: hidden;
+    padding: 0;
+}
+
+[data-theme="dark"] .language-toggle {
+    color: #e5edf7;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .language-toggle {
+        color: #e5edf7;
+    }
+}
+
+.language-option {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    height: 100%;
+    place-items: center;
+    font-size: 0.78rem;
+    transition: color 180ms ease;
+}
+
+.language-thumb {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+    border-radius: 999px;
+    background: var(--soft-teal);
+    box-shadow: inset 0 0 0 1px rgba(16, 32, 51, 0.08);
+    transition: transform 220ms ease, background 220ms ease;
+}
+
+[data-language="en"] .language-thumb {
+    background: var(--soft-blue);
+    transform: translateX(100%);
+}
+
 .theme-icon {
     display: block;
     width: 18px;
@@ -161,13 +216,13 @@ a {
 .main-nav {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     order: 2;
     margin-left: auto;
 }
 
 .main-nav a {
-    padding: 12px 14px;
+    padding: 12px 10px;
     border-radius: 999px;
     color: var(--muted);
     font-size: 0.92rem;
@@ -297,6 +352,8 @@ h3 {
 .timeline,
 .project-card,
 .study-card,
+.playbook-card,
+.language-card,
 .contact {
     border: 2px solid var(--ink);
     border-radius: 8px;
@@ -309,6 +366,8 @@ h3 {
 [data-theme="dark"] .timeline,
 [data-theme="dark"] .project-card,
 [data-theme="dark"] .study-card,
+[data-theme="dark"] .playbook-card,
+[data-theme="dark"] .language-card,
 [data-theme="dark"] .contact {
     background: rgba(16, 28, 47, 0.82);
 }
@@ -323,6 +382,8 @@ h3 {
     :root:not([data-theme="light"]) .timeline,
     :root:not([data-theme="light"]) .project-card,
     :root:not([data-theme="light"]) .study-card,
+    :root:not([data-theme="light"]) .playbook-card,
+    :root:not([data-theme="light"]) .language-card,
     :root:not([data-theme="light"]) .contact {
         background: rgba(16, 28, 47, 0.82);
     }
@@ -458,6 +519,10 @@ h3 {
     box-shadow: 0 0 0 5px rgba(20, 184, 166, 0.18);
 }
 
+.checklist em {
+    font-style: normal;
+}
+
 .section-heading {
     max-width: 780px;
     margin-bottom: 34px;
@@ -478,6 +543,7 @@ h3 {
 .timeline-item p,
 .project-card p,
 .study-card p,
+.language-card p,
 .contact-copy p {
     margin: 0;
     color: var(--muted);
@@ -821,6 +887,101 @@ h3 {
     margin-bottom: 14px;
 }
 
+.playbook-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.playbook-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 270px;
+    padding: 22px;
+}
+
+.playbook-card::before {
+    position: absolute;
+    top: -34px;
+    right: -34px;
+    width: 116px;
+    height: 116px;
+    border: 2px solid var(--ink);
+    border-radius: 50%;
+    background: var(--soft-blue);
+    content: "";
+}
+
+.playbook-card:nth-child(2)::before {
+    background: var(--soft-teal);
+}
+
+.playbook-card:nth-child(3)::before {
+    background: color-mix(in srgb, var(--coral) 22%, var(--surface));
+}
+
+.playbook-card:nth-child(4)::before {
+    background: color-mix(in srgb, var(--sun) 34%, var(--surface));
+}
+
+.step-number {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    border: 2px solid var(--ink);
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--violet);
+    font-weight: 800;
+}
+
+.playbook-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.language-card {
+    position: relative;
+    min-height: 230px;
+    padding: 24px;
+}
+
+.language-level {
+    display: inline-flex;
+    min-height: 36px;
+    align-items: center;
+    margin-bottom: 38px;
+    padding: 7px 12px;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    background: var(--soft-teal);
+    color: var(--ink);
+    font-size: 0.84rem;
+    font-weight: 800;
+}
+
+[data-theme="dark"] .language-level {
+    color: #ecfeff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .language-level {
+        color: #ecfeff;
+    }
+}
+
 .skill-controls {
     display: flex;
     flex-wrap: wrap;
@@ -926,6 +1087,8 @@ h3 {
     .project-grid,
     .project-card.featured,
     .study-grid,
+    .playbook-grid,
+    .language-grid,
     .contact {
         grid-template-columns: 1fr;
     }

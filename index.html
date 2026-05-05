@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Joseph Alexis Moreno Inca, Product Developer con foco en calidad, UX y automatización.">
-    <title>Joseph Moreno | Product Developer Portfolio</title>
+    <meta name="description" content="meta.description" data-i18n-attr="content:meta.description">
+    <title data-i18n="meta.title">meta.title</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,148 +13,138 @@
 </head>
 <body>
     <header class="site-header">
-        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <a class="brand" href="#inicio" aria-label="nav.homeAria" data-i18n-attr="aria-label:nav.homeAria">
             <span>JM</span>
         </a>
 
         <div class="header-actions">
-            <button class="theme-toggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+            <button class="language-toggle" type="button" aria-label="language.toggleAria" title="language.toggleTitle" data-i18n-attr="aria-label:language.toggleAria;title:language.toggleTitle">
+                <span class="language-option">ES</span>
+                <span class="language-option">EN</span>
+                <span class="language-thumb" aria-hidden="true"></span>
+            </button>
+
+            <button class="theme-toggle" type="button" aria-label="theme.toggle" title="theme.toggle">
                 <span class="theme-icon" aria-hidden="true"></span>
             </button>
 
-            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <button class="nav-toggle" type="button" aria-label="nav.menuAria" aria-expanded="false" data-i18n-attr="aria-label:nav.menuAria">
                 <span></span>
                 <span></span>
             </button>
         </div>
 
-        <nav class="main-nav" aria-label="Principal">
-            <a href="#perfil">Perfil</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#estudios">Estudios</a>
-            <a href="#skills">Skills</a>
-            <a href="#contacto">Contacto</a>
+        <nav class="main-nav" aria-label="nav.primaryAria" data-i18n-attr="aria-label:nav.primaryAria">
+            <a href="#profile" data-i18n="nav.profile">nav.profile</a>
+            <a href="#experience" data-i18n="nav.experience">nav.experience</a>
+            <a href="#projects" data-i18n="nav.projects">nav.projects</a>
+            <a href="#studies" data-i18n="nav.studies">nav.studies</a>
+            <a href="#playbook" data-i18n="nav.playbook">nav.playbook</a>
+            <a href="#skills" data-i18n="nav.skills">nav.skills</a>
+            <a href="#languages" data-i18n="nav.languages">nav.languages</a>
+            <a href="#contact" data-i18n="nav.contact">nav.contact</a>
         </nav>
     </header>
 
     <main id="inicio">
         <section class="hero section-band">
             <div class="hero-copy reveal">
-                <p class="eyebrow">Product Developer + QA + Automatización</p>
+                <p class="eyebrow" data-i18n="hero.eyebrow">hero.eyebrow</p>
                 <h1>Joseph Moreno Inca</h1>
-                <p class="hero-lead">
-                    Desarrollo y valido productos digitales con criterio técnico: corrijo bugs críticos, mejoro UX, cuido la consistencia multidioma y automatizo flujos orientados a datos.
-                </p>
+                <p class="hero-lead" data-i18n="hero.lead">hero.lead</p>
                 <div class="hero-actions">
-                    <a class="button primary" href="#proyectos">Ver proyectos</a>
-                    <a class="button ghost" href="mailto:josephmorenoinca@gmail.com">Escríbeme</a>
+                    <a class="button primary" href="#projects" data-i18n="hero.projectsCta">hero.projectsCta</a>
+                    <a class="button ghost" href="mailto:josephmorenoinca@gmail.com" data-i18n="hero.emailCta">hero.emailCta</a>
                 </div>
             </div>
 
-            <aside class="quality-panel reveal" aria-label="Resumen de calidad">
+            <aside class="quality-panel reveal" aria-label="hero.panelAria" data-i18n-attr="aria-label:hero.panelAria">
                 <div class="panel-top">
                     <div>
                         <span class="panel-label">Sprint Health</span>
-                    <strong>Product Ready</strong>
+                        <strong>Product Ready</strong>
                     </div>
                     <span class="status-pill">Live</span>
                 </div>
                 <div class="signal-grid">
                     <div class="signal-card coral">
                         <span>150+</span>
-                        <p>bugs validados</p>
+                        <p data-i18n="hero.metricBugs">hero.metricBugs</p>
                     </div>
                     <div class="signal-card aqua">
                         <span>45+</span>
-                        <p>bugs resueltos o gestionados</p>
+                        <p data-i18n="hero.metricManaged">hero.metricManaged</p>
                     </div>
                     <div class="signal-card lime">
                         <span>5+</span>
-                        <p>casos hipercríticos resueltos</p>
+                        <p data-i18n="hero.metricCritical">hero.metricCritical</p>
                     </div>
                 </div>
                 <div class="checklist">
-                    <div><span></span> Correcciones sobre flujos de alto impacto</div>
-                    <div><span></span> Validación funcional y regresiva</div>
-                    <div><span></span> Control de variantes por idioma</div>
+                    <div><span></span> <em data-i18n="hero.checkHighImpact">hero.checkHighImpact</em></div>
+                    <div><span></span> <em data-i18n="hero.checkRegression">hero.checkRegression</em></div>
+                    <div><span></span> <em data-i18n="hero.checkLanguage">hero.checkLanguage</em></div>
                 </div>
             </aside>
         </section>
 
-        <section id="perfil" class="profile section-band">
+        <section id="profile" class="profile section-band">
             <div class="section-heading reveal">
-                <p class="eyebrow">Perfil</p>
-                <h2>Product Developer con mirada de calidad, UX y negocio.</h2>
+                <p class="eyebrow" data-i18n="profile.eyebrow">profile.eyebrow</p>
+                <h2 data-i18n="profile.title">profile.title</h2>
             </div>
             <div class="profile-grid">
                 <article class="profile-card reveal">
-                    <h3>Lo que hago</h3>
-                    <p>
-                        Trabajo sobre flujos reales de producto: reproduzco incidencias, identifico causa probable, priorizo por impacto, documento evidencia y acompaño la solución hasta su validación.
-                    </p>
+                    <h3 data-i18n="profile.whatTitle">profile.whatTitle</h3>
+                    <p data-i18n="profile.whatText">profile.whatText</p>
                 </article>
                 <article class="profile-card reveal">
-                    <h3>Cómo trabajo</h3>
-                    <p>
-                        Me enfoco en claridad, seguimiento y comunicación efectiva. Un buen reporte técnico reduce ambigüedad, acelera el fix y facilita que el equipo tome decisiones.
-                    </p>
+                    <h3 data-i18n="profile.howTitle">profile.howTitle</h3>
+                    <p data-i18n="profile.howText">profile.howText</p>
                 </article>
                 <article class="profile-card reveal">
-                    <h3>Ahora</h3>
-                    <p>
-                        En Acelera aplico criterio de Product Development sobre una plataforma B2B de estrategia, OKRs, KPIs y backlogs, cuidando estabilidad, usabilidad e internacionalización.
-                    </p>
+                    <h3 data-i18n="profile.nowTitle">profile.nowTitle</h3>
+                    <p data-i18n="profile.nowText">profile.nowText</p>
                 </article>
             </div>
         </section>
 
-        <section id="experiencia" class="timeline-section section-band">
+        <section id="experience" class="timeline-section section-band">
             <div class="section-heading reveal">
-                <p class="eyebrow">Trayectoria</p>
-                <h2>Experiencia que conecta producto, calidad y mejora continua.</h2>
+                <p class="eyebrow" data-i18n="experience.eyebrow">experience.eyebrow</p>
+                <h2 data-i18n="experience.title">experience.title</h2>
             </div>
             <div class="timeline">
                 <article class="timeline-item reveal">
-                    <span class="date">Actualidad</span>
+                    <span class="date" data-i18n="experience.aceleraDate">experience.aceleraDate</span>
                     <div>
-                        <h3>Product Developer · Acelera</h3>
-                        <p>
-                            Desarrollo, valido y mejoro una plataforma de ejecución estratégica que conecta planificación, OKRs, KPIs y backlogs. He validado más de 150 bugs y resuelto o gestionado incidencias hipercríticas, críticas y no críticas, incluyendo fallas que provocaban recargas completas de página, inconsistencias multidioma y fricción UX.
-                        </p>
+                        <h3 data-i18n="experience.aceleraRole">experience.aceleraRole</h3>
+                        <p data-i18n="experience.aceleraText">experience.aceleraText</p>
                     </div>
                 </article>
                 <article class="timeline-item reveal">
-                    <span class="date">Nov 2025 - Dic 2025</span>
+                    <span class="date" data-i18n="experience.tribuDate">experience.tribuDate</span>
                     <div>
-                        <h3>Asistente de Operaciones Digitales y Desarrollo Web · TribuCalma</h3>
-                        <p>
-                            Diagnóstico técnico, análisis de métricas, mejoras UX y optimización de flujos para incrementar estabilidad y retención del sitio. Apoyé en la detección de incidencias web, revisión de comportamiento de usuarios y priorización de ajustes sobre navegación, contenido y experiencia digital.
-                        </p>
-                        <p>
-                            También investigué oportunidades de automatización interna y mejoras tecnológicas para reducir tareas manuales, ordenar procesos operativos y hacer más medible el rendimiento de las acciones digitales.
-                        </p>
+                        <h3 data-i18n="experience.tribuRole">experience.tribuRole</h3>
+                        <p data-i18n="experience.tribuTextOne">experience.tribuTextOne</p>
+                        <p data-i18n="experience.tribuTextTwo">experience.tribuTextTwo</p>
                     </div>
                 </article>
                 <article class="timeline-item reveal">
-                    <span class="date">Mar 2025 - Dic 2025</span>
+                    <span class="date" data-i18n="experience.mentorDate">experience.mentorDate</span>
                     <div>
-                        <h3>Mentor Junior · Universidad Científica del Sur</h3>
-                        <p>
-                            Acompañamiento académico en matemáticas para estudiantes de primeros ciclos, reforzando fundamentos, resolución de problemas y hábitos de estudio. Preparé material de apoyo, expliqué procedimientos paso a paso y adapté la comunicación según el nivel de cada estudiante.
-                        </p>
-                        <p>
-                            Esta experiencia fortaleció mi capacidad para ordenar ideas complejas, comunicar con precisión y dar seguimiento al progreso de otras personas.
-                        </p>
+                        <h3 data-i18n="experience.mentorRole">experience.mentorRole</h3>
+                        <p data-i18n="experience.mentorTextOne">experience.mentorTextOne</p>
+                        <p data-i18n="experience.mentorTextTwo">experience.mentorTextTwo</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="proyectos" class="projects section-band">
+        <section id="projects" class="projects section-band">
             <div class="section-heading reveal">
-                <p class="eyebrow">Proyectos</p>
-                <h2>Automatizaciones y productos pensados para operar mejor.</h2>
+                <p class="eyebrow" data-i18n="projects.eyebrow">projects.eyebrow</p>
+                <h2 data-i18n="projects.title">projects.title</h2>
             </div>
             <div class="project-grid">
                 <article class="project-card featured reveal">
@@ -170,20 +160,14 @@
                     </div>
                     <div>
                         <p class="project-type">Serverless + Scraping + Telegram</p>
-                        <h3>Bot de cursos gratuitos con cupón</h3>
-                        <p>
-                            Automatización serverless que revisa fuentes públicas, detecta nuevas cards de cursos, entra al detalle, obtiene el enlace final de Udemy con cupón aplicado y publica oportunidades en Telegram.
-                        </p>
-                        <p>
-                            Ha liberado más de 7,500 cursos que normalmente son de paga y que, mediante cupones, llegan al 100% de descuento para que la comunidad pueda reclamarlos y conservarlos en su cuenta.
-                        </p>
-                        <p>
-                            Controla duplicados con estado persistente: evita reenviar cursos ya publicados, pero permite republicarlos cuando aparece un nuevo código de cupón para el mismo curso.
-                        </p>
+                        <h3 data-i18n="projects.botTitle">projects.botTitle</h3>
+                        <p data-i18n="projects.botTextOne">projects.botTextOne</p>
+                        <p data-i18n="projects.botTextTwo">projects.botTextTwo</p>
+                        <p data-i18n="projects.botTextThree">projects.botTextThree</p>
                         <div class="chips">
                             <span>JavaScript</span><span>Cloudflare Workers</span><span>KV</span><span>Telegram Bot API</span><span>Wrangler</span>
                         </div>
-                        <a class="project-link" href="https://t.me/gratisudemy" target="_blank" rel="noreferrer">Abrir bot</a>
+                        <a class="project-link" href="https://t.me/gratisudemy" target="_blank" rel="noreferrer" data-i18n="projects.botCta">projects.botCta</a>
                     </div>
                 </article>
 
@@ -197,51 +181,77 @@
                     </div>
                     <div>
                         <p class="project-type">Web App + Tracking</p>
-                        <h3>App de gestión de envíos para MYPE</h3>
-                        <p>
-                            Aplicación para administrar envíos y facilitar el seguimiento operativo de paquetes. Incluye perfiles diferenciados para usuario y administrador, permitiendo registrar, consultar y actualizar estados de envío.
-                        </p>
-                        <p>
-                            El flujo ayuda a una MYPE a ordenar su operación logística, centralizar información y ofrecer tracking más claro para el cliente final.
-                        </p>
+                        <h3 data-i18n="projects.deliveryTitle">projects.deliveryTitle</h3>
+                        <p data-i18n="projects.deliveryTextOne">projects.deliveryTextOne</p>
+                        <p data-i18n="projects.deliveryTextTwo">projects.deliveryTextTwo</p>
                         <div class="chips">
-                            <span>Gestión de envíos</span><span>Tracking</span><span>Admin</span><span>UX operativa</span>
+                            <span data-i18n="projects.deliveryChipOne">projects.deliveryChipOne</span><span>Tracking</span><span>Admin</span><span data-i18n="projects.deliveryChipFour">projects.deliveryChipFour</span>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="estudios" class="studies section-band">
+        <section id="studies" class="studies section-band">
             <div class="section-heading reveal">
-                <p class="eyebrow">Estudios</p>
-                <h2>Base académica reforzada con analítica aplicada.</h2>
+                <p class="eyebrow" data-i18n="studies.eyebrow">studies.eyebrow</p>
+                <h2 data-i18n="studies.title">studies.title</h2>
             </div>
             <div class="study-grid">
                 <article class="study-card reveal">
-                    <span class="date">Agosto 2022 - Actualidad</span>
-                    <h3>Ingeniería Empresarial y de Sistemas · Universidad Científica del Sur</h3>
-                    <p>Formación orientada a sistemas, procesos, negocio y tecnología. Reconocimiento en el Top 10% de rendimiento académico.</p>
+                    <span class="date" data-i18n="studies.degreeDate">studies.degreeDate</span>
+                    <h3 data-i18n="studies.degreeTitle">studies.degreeTitle</h3>
+                    <p data-i18n="studies.degreeText">studies.degreeText</p>
                 </article>
                 <article class="study-card reveal">
-                    <span class="date">Julio 2025</span>
-                    <h3>Data Analytics Essentials · Cisco Networking Academy</h3>
-                    <p>Certificación enfocada en análisis de datos, ETL, SQL y fundamentos para automatización y reporting.</p>
+                    <span class="date" data-i18n="studies.ciscoDate">studies.ciscoDate</span>
+                    <h3 data-i18n="studies.ciscoTitle">studies.ciscoTitle</h3>
+                    <p data-i18n="studies.ciscoText">studies.ciscoText</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="playbook" class="playbook section-band">
+            <div class="section-heading reveal">
+                <p class="eyebrow" data-i18n="playbook.eyebrow">playbook.eyebrow</p>
+                <h2 data-i18n="playbook.title">playbook.title</h2>
+            </div>
+            <div class="playbook-grid">
+                <article class="playbook-card reveal">
+                    <span class="step-number">01</span>
+                    <h3 data-i18n="playbook.stepOneTitle">playbook.stepOneTitle</h3>
+                    <p data-i18n="playbook.stepOneText">playbook.stepOneText</p>
+                </article>
+                <article class="playbook-card reveal">
+                    <span class="step-number">02</span>
+                    <h3 data-i18n="playbook.stepTwoTitle">playbook.stepTwoTitle</h3>
+                    <p data-i18n="playbook.stepTwoText">playbook.stepTwoText</p>
+                </article>
+                <article class="playbook-card reveal">
+                    <span class="step-number">03</span>
+                    <h3 data-i18n="playbook.stepThreeTitle">playbook.stepThreeTitle</h3>
+                    <p data-i18n="playbook.stepThreeText">playbook.stepThreeText</p>
+                </article>
+                <article class="playbook-card reveal">
+                    <span class="step-number">04</span>
+                    <h3 data-i18n="playbook.stepFourTitle">playbook.stepFourTitle</h3>
+                    <p data-i18n="playbook.stepFourText">playbook.stepFourText</p>
                 </article>
             </div>
         </section>
 
         <section id="skills" class="skills section-band">
             <div class="section-heading reveal">
-                <p class="eyebrow">Stack</p>
-                <h2>Herramientas para desarrollar, validar, medir y automatizar.</h2>
+                <p class="eyebrow" data-i18n="skills.eyebrow">skills.eyebrow</p>
+                <h2 data-i18n="skills.title">skills.title</h2>
             </div>
-            <div class="skill-controls reveal" aria-label="Filtros de habilidades">
-                <button class="filter active" type="button" data-filter="all">Todo</button>
+            <div class="skill-controls reveal" aria-label="skills.filtersAria" data-i18n-attr="aria-label:skills.filtersAria">
+                <button class="filter active" type="button" data-filter="all" data-i18n="skills.filterAll">skills.filterAll</button>
                 <button class="filter" type="button" data-filter="qa">QA</button>
                 <button class="filter" type="button" data-filter="data">Data</button>
                 <button class="filter" type="button" data-filter="dev">Dev</button>
                 <button class="filter" type="button" data-filter="cloud">Cloud</button>
+                <button class="filter" type="button" data-filter="ai" data-i18n="skills.filterAi">skills.filterAi</button>
                 <button class="filter" type="button" data-filter="soft">Soft</button>
             </div>
             <div class="skill-list reveal">
@@ -250,12 +260,12 @@
                 <span data-category="data">Power BI</span>
                 <span data-category="data">Excel Avanzado</span>
                 <span data-category="data">ETL & APIs</span>
-                <span data-category="qa">Análisis y validación de datos</span>
-                <span data-category="qa">Testing funcional</span>
-                <span data-category="qa">Regresión</span>
-                <span data-category="qa">Priorización por severidad</span>
-                <span data-category="qa">i18n / control multidioma</span>
-                <span data-category="qa">Documentación de incidencias</span>
+                <span data-category="qa" data-i18n="skills.dataValidation">skills.dataValidation</span>
+                <span data-category="qa" data-i18n="skills.functionalTesting">skills.functionalTesting</span>
+                <span data-category="qa" data-i18n="skills.regression">skills.regression</span>
+                <span data-category="qa" data-i18n="skills.severity">skills.severity</span>
+                <span data-category="qa" data-i18n="skills.i18n">skills.i18n</span>
+                <span data-category="qa" data-i18n="skills.issueDocs">skills.issueDocs</span>
                 <span data-category="dev">JavaScript</span>
                 <span data-category="dev">Git / GitHub</span>
                 <span data-category="cloud">Cloudflare Workers</span>
@@ -263,18 +273,47 @@
                 <span data-category="cloud">Cron Triggers</span>
                 <span data-category="cloud">Telegram Bot API</span>
                 <span data-category="dev">HTML parsing / scraping</span>
-                <span data-category="soft">Comunicación efectiva</span>
-                <span data-category="soft">Resolución de problemas</span>
-                <span data-category="soft">Organización y seguimiento</span>
-                <span data-category="soft">Inglés B1</span>
+                <span data-category="ai">Codex</span>
+                <span data-category="ai">Claude</span>
+                <span data-category="ai" data-i18n="skills.aiDevelopment">skills.aiDevelopment</span>
+                <span data-category="ai" data-i18n="skills.promptEngineering">skills.promptEngineering</span>
+                <span data-category="ai" data-i18n="skills.aiEdgeCases">skills.aiEdgeCases</span>
+                <span data-category="soft" data-i18n="skills.communication">skills.communication</span>
+                <span data-category="soft" data-i18n="skills.problemSolving">skills.problemSolving</span>
+                <span data-category="soft" data-i18n="skills.organization">skills.organization</span>
+                <span data-category="soft" data-i18n="skills.english">skills.english</span>
             </div>
         </section>
 
-        <section id="contacto" class="contact section-band">
+        <section id="languages" class="languages section-band">
+            <div class="section-heading reveal">
+                <p class="eyebrow" data-i18n="languages.eyebrow">languages.eyebrow</p>
+                <h2 data-i18n="languages.title">languages.title</h2>
+            </div>
+            <div class="language-grid">
+                <article class="language-card reveal">
+                    <span class="language-level" data-i18n="languages.spanishLevel">languages.spanishLevel</span>
+                    <h3 data-i18n="languages.spanishTitle">languages.spanishTitle</h3>
+                    <p data-i18n="languages.spanishText">languages.spanishText</p>
+                </article>
+                <article class="language-card reveal">
+                    <span class="language-level">B1</span>
+                    <h3 data-i18n="languages.englishTitle">languages.englishTitle</h3>
+                    <p data-i18n="languages.englishText">languages.englishText</p>
+                </article>
+                <article class="language-card reveal">
+                    <span class="language-level">i18n</span>
+                    <h3 data-i18n="languages.siteTitle">languages.siteTitle</h3>
+                    <p data-i18n="languages.siteText">languages.siteText</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-band">
             <div class="contact-copy reveal">
-                <p class="eyebrow">Contacto</p>
-                <h2>¿Construimos algo que funcione mejor?</h2>
-                <p>Estoy abierto a colaborar en producto, QA, automatización y analítica aplicada, especialmente donde la calidad impacta directamente la experiencia del usuario.</p>
+                <p class="eyebrow" data-i18n="contact.eyebrow">contact.eyebrow</p>
+                <h2 data-i18n="contact.title">contact.title</h2>
+                <p data-i18n="contact.text">contact.text</p>
             </div>
             <div class="contact-actions reveal">
                 <a class="button primary" href="mailto:josephmorenoinca@gmail.com">josephmorenoinca@gmail.com</a>
@@ -282,7 +321,7 @@
             </div>
         </section>
     </main>
-
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

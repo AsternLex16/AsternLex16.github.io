@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Joseph Moreno | Product Developer Portfolio",
+    "description": "Portfolio de Joseph Alexis Moreno Inca, Product Developer con foco en calidad, UX y automatización."
+  },
+  "nav": {
+    "homeAria": "Ir al inicio",
+    "menuAria": "Abrir menú",
+    "primaryAria": "Principal",
+    "profile": "Perfil",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "studies": "Estudios",
+    "playbook": "Playbook",
+    "skills": "Skills",
+    "languages": "Idiomas",
+    "contact": "Contacto"
+  },
+  "language": {
+    "toggleAria": "Cambiar idioma",
+    "toggleTitle": "Cambiar idioma"
+  },
+  "theme": {
+    "lightAria": "Cambiar a modo noche",
+    "lightTitle": "Cambiar a modo noche",
+    "darkAria": "Cambiar a modo claro",
+    "darkTitle": "Cambiar a modo claro"
+  },
+  "hero": {
+    "eyebrow": "Product Developer + QA + Automatización",
+    "lead": "Desarrollo y valido productos digitales con criterio técnico: corrijo bugs críticos, mejoro UX, cuido la consistencia multidioma y automatizo flujos orientados a datos.",
+    "projectsCta": "Ver proyectos",
+    "emailCta": "Escríbeme",
+    "panelAria": "Resumen de calidad",
+    "metricBugs": "bugs validados",
+    "metricManaged": "bugs resueltos o gestionados",
+    "metricCritical": "casos hipercríticos resueltos",
+    "checkHighImpact": "Correcciones sobre flujos de alto impacto",
+    "checkRegression": "Validación funcional y regresiva",
+    "checkLanguage": "Control de variantes por idioma"
+  },
+  "profile": {
+    "eyebrow": "Perfil",
+    "title": "Product Developer con mirada de calidad, UX y negocio.",
+    "whatTitle": "Lo que hago",
+    "whatText": "Trabajo sobre flujos reales de producto: reproduzco incidencias, identifico causa probable, priorizo por impacto, documento evidencia y acompaño la solución hasta su validación.",
+    "howTitle": "Cómo trabajo",
+    "howText": "Me enfoco en claridad, seguimiento y comunicación efectiva. Un buen reporte técnico reduce ambigüedad, acelera el fix y facilita que el equipo tome decisiones.",
+    "nowTitle": "Ahora",
+    "nowText": "En Acelera aplico criterio de Product Development sobre una plataforma B2B de estrategia, OKRs, KPIs y backlogs, cuidando estabilidad, usabilidad e internacionalización."
+  },
+  "experience": {
+    "eyebrow": "Trayectoria",
+    "title": "Experiencia que conecta producto, calidad y mejora continua.",
+    "aceleraDate": "Actualidad",
+    "aceleraRole": "Product Developer · Acelera",
+    "aceleraText": "Desarrollo, valido y mejoro una plataforma de ejecución estratégica que conecta planificación, OKRs, KPIs y backlogs. He validado más de 150 bugs y resuelto o gestionado incidencias hipercríticas, críticas y no críticas, incluyendo fallas que provocaban recargas completas de página, inconsistencias multidioma y fricción UX.",
+    "tribuDate": "Nov 2025 - Dic 2025",
+    "tribuRole": "Asistente de Operaciones Digitales y Desarrollo Web · TribuCalma",
+    "tribuTextOne": "Diagnóstico técnico, análisis de métricas, mejoras UX y optimización de flujos para incrementar estabilidad y retención del sitio. Apoyé en la detección de incidencias web, revisión de comportamiento de usuarios y priorización de ajustes sobre navegación, contenido y experiencia digital.",
+    "tribuTextTwo": "También investigué oportunidades de automatización interna y mejoras tecnológicas para reducir tareas manuales, ordenar procesos operativos y hacer más medible el rendimiento de las acciones digitales.",
+    "mentorDate": "Mar 2025 - Dic 2025",
+    "mentorRole": "Mentor Junior · Universidad Científica del Sur",
+    "mentorTextOne": "Acompañamiento académico en matemáticas para estudiantes de primeros ciclos, reforzando fundamentos, resolución de problemas y hábitos de estudio. Preparé material de apoyo, expliqué procedimientos paso a paso y adapté la comunicación según el nivel de cada estudiante.",
+    "mentorTextTwo": "Esta experiencia fortaleció mi capacidad para ordenar ideas complejas, comunicar con precisión y dar seguimiento al progreso de otras personas."
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Automatizaciones y productos pensados para operar mejor.",
+    "botTitle": "Bot de cursos gratuitos con cupón",
+    "botTextOne": "Automatización serverless que revisa fuentes públicas, detecta nuevas cards de cursos, entra al detalle, obtiene el enlace final de Udemy con cupón aplicado y publica oportunidades en Telegram.",
+    "botTextTwo": "Ha liberado más de 7,500 cursos que normalmente son de paga y que, mediante cupones, llegan al 100% de descuento para que la comunidad pueda reclamarlos y conservarlos en su cuenta.",
+    "botTextThree": "Controla duplicados con estado persistente: evita reenviar cursos ya publicados, pero permite republicarlos cuando aparece un nuevo código de cupón para el mismo curso.",
+    "botCta": "Abrir bot",
+    "deliveryTitle": "App de gestión de envíos para MYPE",
+    "deliveryTextOne": "Aplicación para administrar envíos y facilitar el seguimiento operativo de paquetes. Incluye perfiles diferenciados para usuario y administrador, permitiendo registrar, consultar y actualizar estados de envío.",
+    "deliveryTextTwo": "El flujo ayuda a una MYPE a ordenar su operación logística, centralizar información y ofrecer tracking más claro para el cliente final.",
+    "deliveryChipOne": "Gestión de envíos",
+    "deliveryChipFour": "UX operativa"
+  },
+  "studies": {
+    "eyebrow": "Estudios",
+    "title": "Base académica reforzada con analítica aplicada.",
+    "degreeDate": "Agosto 2022 - Actualidad",
+    "degreeTitle": "Ingeniería Empresarial y de Sistemas · Universidad Científica del Sur",
+    "degreeText": "Formación orientada a sistemas, procesos, negocio y tecnología. Reconocimiento en el Top 10% de rendimiento académico.",
+    "ciscoDate": "Julio 2025",
+    "ciscoTitle": "Data Analytics Essentials · Cisco Networking Academy",
+    "ciscoText": "Certificación enfocada en análisis de datos, ETL, SQL y fundamentos para automatización y reporting."
+  },
+  "playbook": {
+    "eyebrow": "Playbook técnico",
+    "title": "Cómo convierto bugs, datos e IA en mejoras accionables.",
+    "stepOneTitle": "Diagnóstico reproducible",
+    "stepOneText": "Levanto contexto, pasos, entorno, severidad, evidencia visual y comportamiento esperado para reducir ambigüedad antes de proponer un fix.",
+    "stepTwoTitle": "Desarrollo asistido con IA",
+    "stepTwoText": "Uso Codex y Claude para acelerar análisis, refactorizar, generar hipótesis, revisar edge cases y construir soluciones sin perder criterio técnico propio.",
+    "stepThreeTitle": "Validación por impacto",
+    "stepThreeText": "Priorizo flujos críticos, regresión, estados de UI, variantes por idioma y datos sensibles para asegurar que la mejora realmente llegue al usuario.",
+    "stepFourTitle": "Aprendizaje documentado",
+    "stepFourText": "Convierto hallazgos en checklist, prompts reutilizables, criterios de aceptación y notas técnicas para que el equipo avance con menos fricción."
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Herramientas para desarrollar, validar, medir y automatizar.",
+    "filtersAria": "Filtros de habilidades",
+    "filterAll": "Todo",
+    "filterAi": "IA",
+    "dataValidation": "Análisis y validación de datos",
+    "functionalTesting": "Testing funcional",
+    "regression": "Regresión",
+    "severity": "Priorización por severidad",
+    "i18n": "i18n / control multidioma",
+    "issueDocs": "Documentación de incidencias",
+    "aiDevelopment": "Desarrollo asistido con IA",
+    "promptEngineering": "Ingeniería de prompts",
+    "aiEdgeCases": "Análisis de edge cases con IA",
+    "communication": "Comunicación efectiva",
+    "problemSolving": "Resolución de problemas",
+    "organization": "Organización y seguimiento",
+    "english": "Inglés B1"
+  },
+  "languages": {
+    "eyebrow": "Idiomas",
+    "title": "Comunicación adaptable para equipos y usuarios bilingües.",
+    "spanishLevel": "Nativo",
+    "spanishTitle": "Español",
+    "spanishText": "Comunicación clara para documentación, reportes técnicos, seguimiento de bugs y coordinación de producto.",
+    "englishTitle": "Inglés",
+    "englishText": "Formación en el Centro de Idiomas UCSUR con metodología Cambridge. Lectura técnica y comunicación funcional en contextos digitales.",
+    "siteTitle": "Sitio adaptable",
+    "siteText": "El portfolio detecta automáticamente el idioma del navegador y carga ES o EN desde un diccionario de keys preparado para futuros idiomas."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "¿Construimos algo que funcione mejor?",
+    "text": "Estoy abierto a colaborar en producto, QA, automatización y analítica aplicada, especialmente donde la calidad impacta directamente la experiencia del usuario."
+  }
+}

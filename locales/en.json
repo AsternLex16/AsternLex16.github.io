@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Joseph Moreno | Product Developer Portfolio",
+    "description": "Portfolio of Joseph Alexis Moreno Inca, Product Developer focused on quality, UX, and automation."
+  },
+  "nav": {
+    "homeAria": "Go to home",
+    "menuAria": "Open menu",
+    "primaryAria": "Primary",
+    "profile": "Profile",
+    "experience": "Experience",
+    "projects": "Projects",
+    "studies": "Studies",
+    "playbook": "Playbook",
+    "skills": "Skills",
+    "languages": "Languages",
+    "contact": "Contact"
+  },
+  "language": {
+    "toggleAria": "Change language",
+    "toggleTitle": "Change language"
+  },
+  "theme": {
+    "lightAria": "Switch to dark mode",
+    "lightTitle": "Switch to dark mode",
+    "darkAria": "Switch to light mode",
+    "darkTitle": "Switch to light mode"
+  },
+  "hero": {
+    "eyebrow": "Product Developer + QA + Automation",
+    "lead": "I develop and validate digital products with technical judgment: fixing critical bugs, improving UX, keeping multilingual consistency, and automating data-driven workflows.",
+    "projectsCta": "View projects",
+    "emailCta": "Email me",
+    "panelAria": "Quality summary",
+    "metricBugs": "bugs validated",
+    "metricManaged": "bugs resolved or managed",
+    "metricCritical": "hypercritical cases resolved",
+    "checkHighImpact": "Fixes on high-impact flows",
+    "checkRegression": "Functional and regression validation",
+    "checkLanguage": "Language-variant control"
+  },
+  "profile": {
+    "eyebrow": "Profile",
+    "title": "Product Developer with a quality, UX, and business mindset.",
+    "whatTitle": "What I do",
+    "whatText": "I work on real product flows: reproducing issues, identifying likely root causes, prioritizing by impact, documenting evidence, and supporting fixes through validation.",
+    "howTitle": "How I work",
+    "howText": "I focus on clarity, follow-up, and effective communication. A strong technical report reduces ambiguity, speeds up fixes, and helps the team make decisions.",
+    "nowTitle": "Now",
+    "nowText": "At Acelera, I apply Product Development judgment to a B2B platform for strategy, OKRs, KPIs, and backlogs, caring for stability, usability, and internationalization."
+  },
+  "experience": {
+    "eyebrow": "Track record",
+    "title": "Experience connecting product, quality, and continuous improvement.",
+    "aceleraDate": "Current",
+    "aceleraRole": "Product Developer · Acelera",
+    "aceleraText": "I develop, validate, and improve a strategic execution platform that connects planning, OKRs, KPIs, and backlogs. I have validated more than 150 bugs and resolved or managed hypercritical, critical, and non-critical issues, including failures that triggered full page reloads, multilingual inconsistencies, and UX friction.",
+    "tribuDate": "Nov 2025 - Dec 2025",
+    "tribuRole": "Digital Operations and Web Development Assistant · TribuCalma",
+    "tribuTextOne": "Technical diagnosis, metrics analysis, UX improvements, and flow optimization to increase site stability and retention. I supported web issue detection, user-behavior review, and prioritization of navigation, content, and digital-experience improvements.",
+    "tribuTextTwo": "I also researched internal automation opportunities and technology improvements to reduce manual work, organize operational processes, and make digital performance easier to measure.",
+    "mentorDate": "Mar 2025 - Dec 2025",
+    "mentorRole": "Junior Mentor · Universidad Científica del Sur",
+    "mentorTextOne": "Academic mentoring in mathematics for first-cycle students, strengthening fundamentals, problem solving, and study habits. I prepared support material, explained procedures step by step, and adapted communication to each student's level.",
+    "mentorTextTwo": "This experience strengthened my ability to organize complex ideas, communicate precisely, and follow up on other people's progress."
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Automations and products designed to make operations better.",
+    "botTitle": "Free course coupon bot",
+    "botTextOne": "A serverless automation that checks public sources, detects new course cards, opens course details, obtains the final Udemy link with the coupon applied, and publishes opportunities to Telegram.",
+    "botTextTwo": "It has released more than 7,500 courses that are usually paid and, through coupons, reach a 100% discount so the community can claim and keep them in their accounts.",
+    "botTextThree": "It controls duplicates with persistent state: it avoids resending courses already published, but allows reposting when a new coupon code appears for the same course.",
+    "botCta": "Open bot",
+    "deliveryTitle": "Shipment management app for a small business",
+    "deliveryTextOne": "Application to manage shipments and support operational package tracking. It includes separate user and administrator profiles, allowing shipment states to be created, queried, and updated.",
+    "deliveryTextTwo": "The flow helps a small business organize logistics, centralize information, and provide clearer tracking for the final customer.",
+    "deliveryChipOne": "Shipment management",
+    "deliveryChipFour": "Operational UX"
+  },
+  "studies": {
+    "eyebrow": "Studies",
+    "title": "Academic foundation reinforced with applied analytics.",
+    "degreeDate": "August 2022 - Current",
+    "degreeTitle": "Business and Systems Engineering · Universidad Científica del Sur",
+    "degreeText": "Training focused on systems, processes, business, and technology. Recognized in the top 10% for academic performance.",
+    "ciscoDate": "July 2025",
+    "ciscoTitle": "Data Analytics Essentials · Cisco Networking Academy",
+    "ciscoText": "Certification focused on data analysis, ETL, SQL, and foundations for automation and reporting."
+  },
+  "playbook": {
+    "eyebrow": "Technical playbook",
+    "title": "How I turn bugs, data, and AI into actionable improvements.",
+    "stepOneTitle": "Reproducible diagnosis",
+    "stepOneText": "I gather context, steps, environment, severity, visual evidence, and expected behavior to reduce ambiguity before proposing a fix.",
+    "stepTwoTitle": "AI-assisted development",
+    "stepTwoText": "I use Codex and Claude to accelerate analysis, refactor, generate hypotheses, review edge cases, and build solutions without losing my own technical judgment.",
+    "stepThreeTitle": "Impact-based validation",
+    "stepThreeText": "I prioritize critical flows, regression, UI states, language variants, and sensitive data to ensure improvements actually reach the user.",
+    "stepFourTitle": "Documented learning",
+    "stepFourText": "I turn findings into checklists, reusable prompts, acceptance criteria, and technical notes so the team moves with less friction."
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Tools to develop, validate, measure, and automate.",
+    "filtersAria": "Skill filters",
+    "filterAll": "All",
+    "filterAi": "AI",
+    "dataValidation": "Data analysis and validation",
+    "functionalTesting": "Functional testing",
+    "regression": "Regression",
+    "severity": "Severity prioritization",
+    "i18n": "i18n / multilingual control",
+    "issueDocs": "Issue documentation",
+    "aiDevelopment": "AI-assisted development",
+    "promptEngineering": "Prompt engineering",
+    "aiEdgeCases": "AI edge-case analysis",
+    "communication": "Effective communication",
+    "problemSolving": "Problem solving",
+    "organization": "Organization and follow-up",
+    "english": "English B1"
+  },
+  "languages": {
+    "eyebrow": "Languages",
+    "title": "Adaptable communication for bilingual teams and users.",
+    "spanishLevel": "Native",
+    "spanishTitle": "Spanish",
+    "spanishText": "Clear communication for documentation, technical reports, bug follow-up, and product coordination.",
+    "englishTitle": "English",
+    "englishText": "Training at UCSUR Language Center with Cambridge methodology. Technical reading and functional communication in digital contexts.",
+    "siteTitle": "Adaptive site",
+    "siteText": "The portfolio automatically detects the browser language and loads ES or EN from a key-based dictionary prepared for future languages."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Shall we build something that works better?",
+    "text": "I am open to collaborating on product, QA, automation, and applied analytics, especially where quality directly impacts the user experience."
+  }
+}

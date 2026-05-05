@@ -14,10 +14,14 @@ const getActiveTheme = () => {
     return systemTheme.matches ? "dark" : "light";
 };
 
+const translate = (key) => window.portfolioI18n?.t(key) || key;
+
 const applyTheme = (theme, shouldSave = false) => {
     document.documentElement.dataset.theme = theme;
-    themeToggle.setAttribute("aria-label", theme === "dark" ? "Cambiar a modo claro" : "Cambiar a modo noche");
-    themeToggle.setAttribute("title", theme === "dark" ? "Cambiar a modo claro" : "Cambiar a modo noche");
+    const labelKey = theme === "dark" ? "theme.darkAria" : "theme.lightAria";
+    const titleKey = theme === "dark" ? "theme.darkTitle" : "theme.lightTitle";
+    themeToggle.setAttribute("aria-label", translate(labelKey));
+    themeToggle.setAttribute("title", translate(titleKey));
 
     if (shouldSave) {
         localStorage.setItem("theme", theme);
@@ -40,6 +44,10 @@ systemTheme.addEventListener("change", () => {
     if (!localStorage.getItem("theme")) {
         applyTheme(getActiveTheme());
     }
+});
+
+window.addEventListener("portfolio:languagechange", () => {
+    applyTheme(document.documentElement.dataset.theme || getActiveTheme());
 });
 
 navLinks.forEach((link) => {
