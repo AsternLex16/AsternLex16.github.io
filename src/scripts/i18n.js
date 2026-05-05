@@ -24,7 +24,7 @@
         const normalizedLanguage = normalizeLanguage(language);
         if (dictionaries[normalizedLanguage]) return dictionaries[normalizedLanguage];
 
-        const response = await fetch(`locales/${normalizedLanguage}.json`);
+        const response = await fetch(`src/locales/${normalizedLanguage}.json`);
         if (!response.ok) {
             throw new Error(`Unable to load locale: ${normalizedLanguage}`);
         }
