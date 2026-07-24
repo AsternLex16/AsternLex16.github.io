@@ -1,20 +1,22 @@
 {
   "meta": {
-    "title": "Joseph Moreno | Product Developer Portfolio",
-    "description": "Portfolio de Joseph Alexis Moreno Inca, Product Developer con foco en calidad, UX y automatización."
+    "title": "Joseph Moreno Inca | Product Developer",
+    "description": "Portfolio de Joseph Moreno Inca, Product Developer especializado en QA, automatización, datos e IA aplicada a producto.",
+    "ogTitle": "Joseph Moreno Inca | Product Developer",
+    "ogDescription": "Convierto bugs, datos e IA en mejoras accionables de producto."
+  },
+  "accessibility": {
+    "skip": "Saltar al contenido"
   },
   "nav": {
     "homeAria": "Ir al inicio",
     "menuAria": "Abrir menú",
-    "primaryAria": "Principal",
-    "profile": "Perfil",
+    "closeAria": "Cerrar menú",
+    "primaryAria": "Navegación principal",
+    "impact": "Impacto",
+    "cases": "Casos",
     "experience": "Experiencia",
-    "projects": "Proyectos",
-    "built": "Construido",
-    "studies": "Estudios",
-    "playbook": "Playbook",
-    "skills": "Skills",
-    "languages": "Idiomas",
+    "stack": "Stack",
     "contact": "Contacto"
   },
   "language": {
@@ -22,179 +24,266 @@
     "toggleTitle": "Cambiar idioma"
   },
   "theme": {
-    "lightAria": "Cambiar a modo noche",
-    "lightTitle": "Cambiar a modo noche",
+    "lightAria": "Cambiar a modo oscuro",
+    "lightTitle": "Cambiar a modo oscuro",
     "darkAria": "Cambiar a modo claro",
     "darkTitle": "Cambiar a modo claro"
   },
   "hero": {
-    "eyebrow": "Product Developer + QA + Automatización",
-    "lead": "Desarrollo y valido productos digitales con criterio técnico: corrijo bugs críticos, mejoro UX, cuido la consistencia multidioma y automatizo flujos orientados a datos.",
-    "projectsCta": "Ver proyectos",
-    "emailCta": "Escríbeme",
-    "panelAria": "Resumen de calidad",
-    "metricBugs": "bugs validados",
-    "metricManaged": "bugs resueltos o gestionados",
-    "metricCritical": "casos hipercríticos resueltos",
-    "checkHighImpact": "Correcciones sobre flujos de alto impacto",
-    "checkRegression": "Validación funcional y regresiva",
-    "checkLanguage": "Control de variantes por idioma"
+    "eyebrow": "Lima, Perú · Product Developer",
+    "statement": "Convierto bugs, datos e IA en mejoras accionables de producto.",
+    "summary": "Product Developer especializado en QA, automatización, análisis de datos e IA aplicada a productos digitales.",
+    "casesCta": "Ver case studies",
+    "cvCta": "Descargar CV",
+    "contactCta": "Contactar",
+    "contextAria": "Resumen profesional",
+    "focusLabel": "Foco",
+    "focusValue": "Producto, QA y automatización",
+    "educationLabel": "Formación",
+    "educationValue": "Ingeniería Empresarial y de Sistemas",
+    "photoAlt": "Retrato profesional de Joseph Moreno Inca",
+    "photoCaption": "Producto con criterio técnico y visión de negocio.",
+    "signalsAria": "Indicadores destacados",
+    "signalBugs": "bugs validados",
+    "signalCourses": "cursos compartidos",
+    "signalAcademic": "rendimiento académico",
+    "footnote": "QA funcional · Datos · Cloudflare · APIs · IA aplicada",
+    "scrollCta": "Explorar impacto"
   },
-  "profile": {
-    "eyebrow": "Perfil",
-    "title": "Product Developer con mirada de calidad, UX y negocio.",
-    "whatTitle": "Lo que hago",
-    "whatText": "Trabajo sobre flujos reales de producto: reproduzco incidencias, identifico causa probable, priorizo por impacto, documento evidencia y acompaño la solución hasta su validación.",
-    "howTitle": "Cómo trabajo",
-    "howText": "Me enfoco en claridad, seguimiento y comunicación efectiva. Un buen reporte técnico reduce ambigüedad, acelera el fix y facilita que el equipo tome decisiones.",
-    "nowTitle": "Ahora",
-    "nowText": "En Acelera aplico criterio de Product Development sobre una plataforma B2B de estrategia, OKRs, KPIs y backlogs, cuidando estabilidad, usabilidad e internacionalización."
+  "impact": {
+    "eyebrow": "Impacto",
+    "title": "El trabajo se entiende mejor cuando deja evidencia.",
+    "lead": "Resultados de producto, automatización y operaciones digitales reunidos en una sola lectura.",
+    "bugsTitle": "Bugs validados",
+    "bugsText": "Flujos funcionales, estados de UI, regresión e i18n.",
+    "managedTitle": "Resueltos o gestionados",
+    "managedText": "Seguimiento desde la evidencia hasta la validación final.",
+    "criticalTitle": "Casos hipercríticos",
+    "criticalText": "Incidencias con impacto directo en flujos clave.",
+    "coursesTitle": "Cursos compartidos",
+    "coursesText": "Automatización serverless con cupones al 100%.",
+    "stabilityTitle": "Usuarios beneficiados",
+    "stabilityText": "Por mejoras de estabilidad reportadas en TribuCalma.",
+    "frictionTitle": "Menos fricción",
+    "frictionText": "Reducción reportada en navegación y experiencia.",
+    "note": "Métricas provenientes de experiencia profesional, CV y proyectos personales."
+  },
+  "cases": {
+    "eyebrow": "Case studies",
+    "title": "Cuatro formas de mejorar un producto real.",
+    "lead": "Calidad, automatización, operaciones y diseño de sistemas conectados por el mismo criterio: entender antes de construir.",
+    "tabsAria": "Casos de estudio",
+    "labels": {
+      "challenge": "Desafío",
+      "action": "Intervención",
+      "outcome": "Resultado"
+    },
+    "acelera": {
+      "tabTitle": "Acelera",
+      "tabMeta": "Product Quality",
+      "kicker": "Acelera · Mar 2026 - Actualidad",
+      "title": "Calidad de producto bajo presión operativa real.",
+      "link": "Conocer Acelera",
+      "lead": "Trabajo sobre una plataforma B2B que conecta estrategia, OKRs, KPIs y backlogs. Mi aporte se centra en convertir comportamientos ambiguos en incidencias reproducibles y mejoras verificables.",
+      "challenge": "Flujos críticos con recargas completas, inconsistencias multidioma, estados de UI frágiles y fricción de navegación.",
+      "action": "Reproducción, clasificación por severidad, evidencia clara, validación funcional y regresiva, y seguimiento posterior al fix.",
+      "outcome": "150+ bugs validados, 45+ resueltos o gestionados y 5+ casos hipercríticos atendidos.",
+      "visualAria": "Representación del flujo de calidad de producto",
+      "visualStatus": "Evidencia lista",
+      "visualFocusLabel": "Criterio de prioridad",
+      "visualFocus": "Impacto en usuario",
+      "visualFocusText": "Severidad, alcance, reproducibilidad y riesgo de regresión.",
+      "severityHyper": "Hipercrítico",
+      "severityCritical": "Crítico",
+      "severityMedium": "Medio",
+      "issueOne": "Recarga completa en flujo clave",
+      "issueTwo": "Consistencia entre idiomas",
+      "issueThree": "Fricción de interacción",
+      "stateValidated": "Validado",
+      "stateTracked": "En seguimiento",
+      "stateDocumented": "Documentado"
+    },
+    "bot": {
+      "tabTitle": "Bot serverless",
+      "tabMeta": "Automatización",
+      "kicker": "Proyecto personal · 2025",
+      "title": "Una automatización que convierte ruido web en oportunidades útiles.",
+      "link": "Abrir canal",
+      "lead": "Diseñé un sistema serverless que identifica cursos con cupones activos, procesa fuentes públicas, controla duplicados y publica resultados en Telegram.",
+      "challenge": "Datos no estructurados, enlaces cambiantes y riesgo de repetir oportunidades que ya habían sido publicadas.",
+      "action": "JavaScript en Cloudflare Workers, estado persistente en KV, deduplicación por curso/cupón e integración con Telegram API.",
+      "outcome": "Más de 7,500 cursos compartidos con cupones al 100% y un flujo sin servidor tradicional.",
+      "visualAria": "Arquitectura de automatización serverless",
+      "nodeSource": "Fuentes públicas",
+      "nodeProcess": "Parseo + reglas",
+      "nodeDedupe": "Deduplicación",
+      "nodePublish": "Publicación",
+      "previewTitle": "Curso detectado",
+      "previewCourse": "Data Analytics Essentials",
+      "previewCoupon": "Cupón activo",
+      "previewState": "Nuevo estado guardado en KV"
+    },
+    "erp": {
+      "tabTitle": "ERP operativo",
+      "tabMeta": "Sistema de producto",
+      "kicker": "Producto interno · Mockup navegable",
+      "title": "Operación comercial convertida en un sistema legible.",
+      "link": "Abrir demo",
+      "lead": "Conceptualicé un ERP para ordenar oportunidades, cuentas, responsables, etapas y métricas sin perder el contexto operativo.",
+      "challenge": "Información comercial distribuida, seguimiento manual y baja visibilidad del estado real del pipeline.",
+      "action": "Arquitectura de módulos, jerarquía de datos, roles, filtros y detalle contextual para decidir el siguiente paso.",
+      "outcome": "Un mockup funcional que demuestra flujos, navegación, búsqueda, edición y lectura de indicadores.",
+      "visualAria": "Vista previa del ERP operativo",
+      "previewKicker": "Pipeline comercial",
+      "previewTitle": "Gestión de oportunidades",
+      "previewButton": "Nueva oportunidad",
+      "metricPipeline": "Pipeline abierto",
+      "metricTicket": "Ticket promedio",
+      "metricRecords": "Oportunidades",
+      "colAccount": "Cuenta",
+      "colAmount": "Monto",
+      "colStage": "Etapa"
+    },
+    "tribu": {
+      "tabTitle": "TribuCalma",
+      "tabMeta": "Operaciones digitales",
+      "kicker": "TribuCalma · Nov - Dic 2025",
+      "title": "Menos fricción digital, más estabilidad operativa.",
+      "lead": "Apoyé el diagnóstico técnico, el análisis de flujos y el prototipado de mejoras para una experiencia web más estable y fácil de recorrer.",
+      "challenge": "Incidencias técnicas, recorridos poco claros y procesos digitales internos con oportunidades de automatización.",
+      "action": "Diagnóstico, análisis de métricas, evaluación de alternativas y prototipado de ajustes de estructura y UX.",
+      "outcome": "Mejoras de estabilidad para +25% de usuarios y reducción reportada de 20-30% en fricción de navegación.",
+      "visualAria": "Representación de mejora del recorrido de usuario",
+      "visualStatus": "Flujo optimizado",
+      "journeyEntry": "Entrada",
+      "journeyEntryText": "Intención del usuario",
+      "journeyDiagnosis": "Diagnóstico",
+      "journeyDiagnosisText": "Puntos de fricción",
+      "journeyOutcome": "Recorrido claro",
+      "journeyOutcomeText": "Menos abandono",
+      "resultStability": "alcance de estabilidad",
+      "resultFriction": "menos fricción reportada"
+    }
+  },
+  "work": {
+    "eyebrow": "Selected web work",
+    "title": "Piezas web donde la claridad también es producto.",
+    "simplexityRole": "Astro · Frontend · UX ejecutiva",
+    "aceleraRole": "Astro · i18n · Landing SaaS"
   },
   "experience": {
-    "eyebrow": "Trayectoria",
-    "title": "Experiencia que conecta producto, calidad y mejora continua.",
-    "aceleraDate": "Mar 2026 - Actualidad",
-    "aceleraRole": "Product Developer · Acelera",
-    "aceleraText": "Desarrollo, valido y mejoro una plataforma de ejecución estratégica que conecta planificación, OKRs, KPIs y backlogs. He validado más de 150 bugs y resuelto o gestionado incidencias hipercríticas, críticas y no críticas, incluyendo fallas que provocaban recargas completas de página, inconsistencias multidioma y fricción UX.",
-    "tribuDate": "Nov 2025 - Dic 2025",
-    "tribuRole": "Asistente de Operaciones Digitales y Desarrollo Web · TribuCalma",
-    "tribuTextOne": "Diagnóstico técnico, análisis de métricas, mejoras UX y optimización de flujos para incrementar estabilidad y retención del sitio. Apoyé en la detección de incidencias web, revisión de comportamiento de usuarios y priorización de ajustes sobre navegación, contenido y experiencia digital.",
-    "tribuTextTwo": "También investigué oportunidades de automatización interna y mejoras tecnológicas para reducir tareas manuales, ordenar procesos operativos y hacer más medible el rendimiento de las acciones digitales.",
-    "mentorDate": "Mar 2025 - Dic 2025",
-    "mentorRole": "Mentor Junior · Universidad Científica del Sur",
-    "mentorTextOne": "Acompañamiento académico en matemáticas para estudiantes de primeros ciclos, reforzando fundamentos, resolución de problemas y hábitos de estudio. Preparé material de apoyo, expliqué procedimientos paso a paso y adapté la comunicación según el nivel de cada estudiante.",
-    "mentorTextTwo": "Esta experiencia fortaleció mi capacidad para ordenar ideas complejas, comunicar con precisión y dar seguimiento al progreso de otras personas."
-  },
-  "projects": {
-    "eyebrow": "Proyectos",
-    "title": "Automatizaciones y productos pensados para operar mejor.",
-    "botTitle": "Bot de cursos gratuitos con cupón",
-    "botTextOne": "Automatización serverless que revisa fuentes públicas, detecta nuevas cards de cursos, entra al detalle, obtiene el enlace final de Udemy con cupón aplicado y publica oportunidades en Telegram.",
-    "botTextTwo": "Ha liberado más de 7,500 cursos que normalmente son de paga y que, mediante cupones, llegan al 100% de descuento para que la comunidad pueda reclamarlos y conservarlos en su cuenta.",
-    "botTextThree": "Controla duplicados con estado persistente: evita reenviar cursos ya publicados, pero permite republicarlos cuando aparece un nuevo código de cupón para el mismo curso.",
-    "botCta": "Abrir bot",
-    "deliveryTitle": "App de gestión de envíos para MYPE",
-    "deliveryTextOne": "Aplicación para administrar envíos y facilitar el seguimiento operativo de paquetes. Incluye perfiles diferenciados para usuario y administrador, permitiendo registrar, consultar y actualizar estados de envío.",
-    "deliveryTextTwo": "El flujo ayuda a una MYPE a ordenar su operación logística, centralizar información y ofrecer tracking más claro para el cliente final.",
-    "deliveryChipOne": "Gestión de envíos",
-    "deliveryChipFour": "UX operativa"
-  },
-  "built": {
-    "eyebrow": "Lo que he construido",
-    "title": "Webs en Astro, producto SaaS y un ERP.",
-    "simplexityTitle": "SimplexityLab",
-    "simplexityText": "Construí la web en Astro para una propuesta de estrategia multi-inteligente: una experiencia sobria, ejecutiva y enfocada en explicar una metodología compleja de forma clara.",
-    "simplexityCta": "Ver web",
-    "aceleraTitle": "Acelera.io",
-    "aceleraText": "Apoyé la evolución multidioma de una landing SaaS centrada en ejecución estratégica, OKRs, KPIs y reportabilidad. El trabajo exigió cuidar consistencia de contenido, navegación y experiencia entre idiomas.",
-    "aceleraCta": "Ver web",
-    "erpTitle": "ERP operativo",
-    "erpText": "Construí un ERP para ordenar procesos internos, roles y flujos de gestión. Dejaré enlazado un mockup navegable para mostrar mejor la lógica del producto y sus pantallas principales.",
-    "erpCta": "Mockup del ERP"
-  },
-  "erp": {
-    "pageTitle": "Mockup ERP | Joseph Moreno",
-    "eyebrow": "Tour del ERP",
-    "title": "Un mockup navegable para entender cómo funciona el flujo comercial.",
-    "sidebarAria": "Navegación del ERP",
-    "brandTitle": "ERP operativo",
-    "brandSubtitle": "Pipeline",
-    "navAria": "Módulos del ERP",
-    "navIdentity": "Identidad",
-    "navOpportunities": "Oportunidades",
-    "navCommissions": "Comisiones",
-    "navContacts": "Contactos",
-    "navIntegrations": "Integraciones",
-    "crumb": "Oportunidades / Pipeline comercial",
-    "workspaceTitle": "Gestión de oportunidades",
-    "usersButton": "Usuarios",
-    "createButton": "Crear oportunidad",
-    "tabsAria": "Vistas del ERP",
-    "tabPipeline": "Pipeline",
-    "tabAccounts": "Cuentas",
-    "tabContacts": "Contactos",
-    "tabReports": "Reportes",
-    "metricPipeline": "Pipeline abierto",
-    "metricTicket": "Ticket promedio",
-    "metricRecords": "Oportunidades",
-    "tableAria": "Tabla de oportunidades",
-    "colOpportunity": "Oportunidad",
-    "colCompany": "Empresa",
-    "colProduct": "Producto",
-    "colAmount": "Monto",
-    "colStatus": "Estado",
-    "detailKicker": "Detalle seleccionado",
-    "detailProduct": "Producto",
-    "detailAmount": "Monto",
-    "detailOwner": "Líder",
-    "detailStage": "Etapa",
-    "detailNote": "El panel lateral resume lo importante para decidir el siguiente paso: cuenta, monto, responsable, etapa y contexto comercial.",
-    "tourLabel": "Cómo funciona",
-    "stepOneTitle": "1. El equipo entra al pipeline",
-    "stepOneText": "La vista central reúne oportunidades comerciales con empresa anonimizada, producto, monto y estado para priorizar rápido sin perder contexto.",
-    "stepTwoTitle": "2. Se crea una oportunidad",
-    "stepTwoText": "El botón principal inicia el registro de una nueva oportunidad, conectando cuenta, producto, monto estimado, responsable y etapa del proceso.",
-    "stepThreeTitle": "3. Se revisa el detalle",
-    "stepThreeText": "Al seleccionar una fila, el panel derecho muestra un resumen operativo para continuar seguimiento, negociación o cierre.",
-    "stepFourTitle": "4. Se mide el avance",
-    "stepFourText": "Las métricas superiores permiten leer pipeline abierto, ticket promedio y cantidad de oportunidades sin entrar a reportes pesados."
-  },
-  "studies": {
-    "eyebrow": "Estudios",
-    "title": "Base académica reforzada con analítica aplicada.",
-    "degreeDate": "Agosto 2022 - Actualidad",
-    "degreeTitle": "Ingeniería Empresarial y de Sistemas · Universidad Científica del Sur",
-    "degreeText": "Formación orientada a sistemas, procesos, negocio y tecnología. Reconocimiento en el Top 10% de rendimiento académico.",
-    "ciscoDate": "Julio 2025",
-    "ciscoTitle": "Data Analytics Essentials · Cisco Networking Academy",
-    "ciscoText": "Certificación enfocada en análisis de datos, ETL, SQL y fundamentos para automatización y reporting."
+    "eyebrow": "Experiencia",
+    "title": "Producto, operaciones y comunicación en una misma trayectoria.",
+    "lead": "Mi experiencia combina ejecución técnica con una capacidad que considero igual de importante: hacer visible qué ocurre y qué conviene hacer después.",
+    "cvCta": "Ver CV completo",
+    "acelera": {
+      "date": "Mar 2026 - Actualidad",
+      "role": "Product Developer",
+      "pointOne": "Validación de flujos críticos, regresión, estados de UI y consistencia multidioma.",
+      "pointTwo": "Documentación y seguimiento de incidencias para acelerar decisiones y fixes.",
+      "pointThree": "Trabajo sobre un producto B2B de estrategia, OKRs, KPIs y backlogs."
+    },
+    "tribu": {
+      "date": "Nov 2025 - Dic 2025",
+      "role": "Asistente de Operaciones Digitales y Desarrollo Web",
+      "pointOne": "Diagnóstico técnico y análisis de comportamiento para priorizar mejoras web.",
+      "pointTwo": "Prototipado de estructura y UX para reducir fricción en navegación.",
+      "pointThree": "Investigación de automatizaciones para ordenar procesos internos."
+    },
+    "mentor": {
+      "date": "Mar 2025 - Dic 2025",
+      "company": "Universidad Científica del Sur",
+      "role": "Mentor Junior",
+      "pointOne": "Acompañamiento en matemáticas a estudiantes de primeros ciclos.",
+      "pointTwo": "Preparación de material y explicación paso a paso según cada nivel.",
+      "pointThree": "Seguimiento académico con comunicación clara y estructurada.",
+      "tagOne": "Comunicación",
+      "tagTwo": "Pensamiento analítico"
+    }
   },
   "playbook": {
-    "eyebrow": "Playbook técnico",
-    "title": "Cómo convierto bugs, datos e IA en mejoras accionables.",
-    "stepOneTitle": "Diagnóstico reproducible",
-    "stepOneText": "Levanto contexto, pasos, entorno, severidad, evidencia visual y comportamiento esperado para reducir ambigüedad antes de proponer un fix.",
-    "stepTwoTitle": "Desarrollo asistido con IA",
-    "stepTwoText": "Uso Codex y Claude para acelerar análisis, refactorizar, generar hipótesis, revisar edge cases y construir soluciones sin perder criterio técnico propio.",
-    "stepThreeTitle": "Validación por impacto",
-    "stepThreeText": "Priorizo flujos críticos, regresión, estados de UI, variantes por idioma y datos sensibles para asegurar que la mejora realmente llegue al usuario.",
-    "stepFourTitle": "Aprendizaje documentado",
-    "stepFourText": "Convierto hallazgos en checklist, prompts reutilizables, criterios de aceptación y notas técnicas para que el equipo avance con menos fricción."
+    "eyebrow": "Operating playbook",
+    "title": "Un método simple para problemas que no siempre lo son.",
+    "lead": "Diagnóstico reproducible, prioridad por impacto, validación y aprendizaje documentado.",
+    "stepOne": {
+      "title": "Entender",
+      "text": "Levanto contexto, entorno, pasos y comportamiento esperado antes de proponer una solución."
+    },
+    "stepTwo": {
+      "title": "Priorizar",
+      "text": "Cruzo severidad, alcance, frecuencia y riesgo para enfocar esfuerzo donde cambia la experiencia."
+    },
+    "stepThree": {
+      "title": "Resolver y validar",
+      "text": "Uso desarrollo e IA como aceleradores, luego valido funcionalidad, regresión, idioma y datos."
+    },
+    "stepFour": {
+      "title": "Dejar sistema",
+      "text": "Convierto hallazgos en evidencia, criterios de aceptación, checklists y aprendizaje reutilizable."
+    }
   },
-  "skills": {
+  "stack": {
     "eyebrow": "Stack",
-    "title": "Herramientas para desarrollar, validar, medir y automatizar.",
-    "filtersAria": "Filtros de habilidades",
-    "filterAll": "Todo",
-    "filterAi": "IA",
-    "dataValidation": "Análisis y validación de datos",
-    "functionalTesting": "Testing funcional",
-    "regression": "Regresión",
-    "severity": "Priorización por severidad",
-    "i18n": "i18n / control multidioma",
-    "issueDocs": "Documentación de incidencias",
-    "aiDevelopment": "Desarrollo asistido con IA",
-    "promptEngineering": "Ingeniería de prompts",
-    "aiEdgeCases": "Análisis de edge cases con IA",
-    "communication": "Comunicación efectiva",
-    "problemSolving": "Resolución de problemas",
-    "organization": "Organización y seguimiento",
-    "english": "Inglés B2"
+    "title": "Herramientas elegidas por el problema, no por la moda.",
+    "lead": "Cinco áreas que se conectan para desarrollar, validar, medir y automatizar.",
+    "tabsAria": "Áreas de especialidad",
+    "qa": {
+      "tab": "Producto & QA",
+      "title": "Calidad que acompaña el ciclo completo.",
+      "text": "Desde reproducir la incidencia hasta comprobar que la solución funciona en estados, idiomas y flujos vecinos."
+    },
+    "data": {
+      "tab": "Datos",
+      "title": "Datos convertidos en decisiones legibles.",
+      "text": "Limpieza, validación, análisis y reporting para detectar patrones y sostener una recomendación."
+    },
+    "dev": {
+      "tab": "Desarrollo",
+      "title": "Código para materializar y probar una idea.",
+      "text": "Desarrollo web, scripting y control de versiones para pasar de hipótesis a una solución comprobable."
+    },
+    "cloud": {
+      "tab": "Cloud & Automatización",
+      "title": "Automatización ligera, persistente y observable.",
+      "text": "Integraciones que procesan información, mantienen estado y activan acciones sin infraestructura pesada."
+    },
+    "ai": {
+      "tab": "IA aplicada",
+      "title": "IA como multiplicador de criterio.",
+      "text": "La uso para explorar hipótesis, revisar edge cases, desarrollar y documentar; la decisión final sigue siendo humana y verificable."
+    },
+    "soft": {
+      "label": "Cómo colaboro",
+      "value": "Pensamiento analítico · comunicación efectiva · organización · seguimiento · resolución de problemas"
+    }
   },
-  "languages": {
-    "eyebrow": "Idiomas",
-    "title": "Comunicación adaptable para equipos y usuarios bilingües.",
-    "spanishLevel": "Nativo",
-    "spanishTitle": "Español",
-    "spanishText": "Comunicación clara para documentación, reportes técnicos, seguimiento de bugs y coordinación de producto.",
-    "englishTitle": "Inglés",
-    "englishText": "Formación en el Centro de Idiomas UCSUR con metodología Cambridge. Lectura técnica y comunicación funcional en contextos digitales.",
-    "siteTitle": "Arquitectura limpia",
-    "siteText": "Estructura separada por responsabilidades: contenido traducible en JSON, scripts modulares, estilos centralizados y assets organizados para facilitar mantenimiento y escalabilidad."
+  "education": {
+    "eyebrow": "Formación",
+    "title": "Ingeniería para conectar negocio, procesos y tecnología.",
+    "degree": {
+      "date": "Ago 2022 - Actualidad",
+      "title": "Ingeniería Empresarial y de Sistemas",
+      "school": "Universidad Científica del Sur",
+      "badge": "Top 10% académico"
+    },
+    "cisco": {
+      "date": "Jul 2025"
+    },
+    "languages": {
+      "label": "Idiomas",
+      "title": "Español nativo · Inglés funcional",
+      "text": "Formación Cambridge en el Centro de Idiomas UCSUR; lectura técnica y comunicación funcional."
+    }
   },
   "contact": {
     "eyebrow": "Contacto",
-    "title": "¿Construimos algo que funcione mejor?",
-    "text": "Estoy abierto a colaborar en producto, QA, automatización y analítica aplicada, especialmente donde la calidad impacta directamente la experiencia del usuario."
+    "title": "Construyamos producto con mejor calidad, datos y criterio.",
+    "text": "Estoy abierto a conversaciones sobre producto, QA, automatización y analítica aplicada.",
+    "cvCta": "Descargar CV",
+    "location": "Lima, Perú · Disponible para oportunidades y colaboraciones"
+  },
+  "footer": {
+    "note": "Diseñado como producto. Validado con criterio.",
+    "backToTop": "Volver arriba"
   }
 }

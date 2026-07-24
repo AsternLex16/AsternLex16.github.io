@@ -1,20 +1,22 @@
 {
   "meta": {
-    "title": "Joseph Moreno | Product Developer Portfolio",
-    "description": "Portfolio of Joseph Alexis Moreno Inca, Product Developer focused on quality, UX, and automation."
+    "title": "Joseph Moreno Inca | Product Developer",
+    "description": "Portfolio of Joseph Moreno Inca, a Product Developer specializing in QA, automation, data, and AI applied to product.",
+    "ogTitle": "Joseph Moreno Inca | Product Developer",
+    "ogDescription": "I turn bugs, data, and AI into actionable product improvements."
+  },
+  "accessibility": {
+    "skip": "Skip to content"
   },
   "nav": {
     "homeAria": "Go to home",
     "menuAria": "Open menu",
-    "primaryAria": "Primary",
-    "profile": "Profile",
+    "closeAria": "Close menu",
+    "primaryAria": "Primary navigation",
+    "impact": "Impact",
+    "cases": "Cases",
     "experience": "Experience",
-    "projects": "Projects",
-    "built": "Built",
-    "studies": "Studies",
-    "playbook": "Playbook",
-    "skills": "Skills",
-    "languages": "Languages",
+    "stack": "Stack",
     "contact": "Contact"
   },
   "language": {
@@ -28,173 +30,260 @@
     "darkTitle": "Switch to light mode"
   },
   "hero": {
-    "eyebrow": "Product Developer + QA + Automation",
-    "lead": "I develop and validate digital products with technical judgment: fixing critical bugs, improving UX, keeping multilingual consistency, and automating data-driven workflows.",
-    "projectsCta": "View projects",
-    "emailCta": "Email me",
-    "panelAria": "Quality summary",
-    "metricBugs": "bugs validated",
-    "metricManaged": "bugs resolved or managed",
-    "metricCritical": "hypercritical cases resolved",
-    "checkHighImpact": "Fixes on high-impact flows",
-    "checkRegression": "Functional and regression validation",
-    "checkLanguage": "Language-variant control"
+    "eyebrow": "Lima, Peru · Product Developer",
+    "statement": "I turn bugs, data, and AI into actionable product improvements.",
+    "summary": "Product Developer specializing in QA, automation, data analysis, and AI applied to digital products.",
+    "casesCta": "View case studies",
+    "cvCta": "Download resume",
+    "contactCta": "Contact me",
+    "contextAria": "Professional summary",
+    "focusLabel": "Focus",
+    "focusValue": "Product, QA, and automation",
+    "educationLabel": "Education",
+    "educationValue": "Business and Systems Engineering",
+    "photoAlt": "Professional portrait of Joseph Moreno Inca",
+    "photoCaption": "Product thinking backed by technical judgment and business context.",
+    "signalsAria": "Highlighted indicators",
+    "signalBugs": "bugs validated",
+    "signalCourses": "courses shared",
+    "signalAcademic": "academic performance",
+    "footnote": "Functional QA · Data · Cloudflare · APIs · Applied AI",
+    "scrollCta": "Explore impact"
   },
-  "profile": {
-    "eyebrow": "Profile",
-    "title": "Product Developer with a quality, UX, and business mindset.",
-    "whatTitle": "What I do",
-    "whatText": "I work on real product flows: reproducing issues, identifying likely root causes, prioritizing by impact, documenting evidence, and supporting fixes through validation.",
-    "howTitle": "How I work",
-    "howText": "I focus on clarity, follow-up, and effective communication. A strong technical report reduces ambiguity, speeds up fixes, and helps the team make decisions.",
-    "nowTitle": "Now",
-    "nowText": "At Acelera, I apply Product Development judgment to a B2B platform for strategy, OKRs, KPIs, and backlogs, caring for stability, usability, and internationalization."
+  "impact": {
+    "eyebrow": "Impact",
+    "title": "Work becomes clearer when it leaves evidence.",
+    "lead": "Product, automation, and digital operations outcomes brought together in one clear view.",
+    "bugsTitle": "Bugs validated",
+    "bugsText": "Functional flows, UI states, regression, and i18n.",
+    "managedTitle": "Resolved or managed",
+    "managedText": "Follow-up from initial evidence through final validation.",
+    "criticalTitle": "Hypercritical cases",
+    "criticalText": "Issues with direct impact on key product flows.",
+    "coursesTitle": "Courses shared",
+    "coursesText": "Serverless automation with 100% discount coupons.",
+    "stabilityTitle": "Users reached",
+    "stabilityText": "Through stability improvements reported at TribuCalma.",
+    "frictionTitle": "Less friction",
+    "frictionText": "Reported reduction across navigation and experience.",
+    "note": "Metrics drawn from professional experience, resume, and personal projects."
+  },
+  "cases": {
+    "eyebrow": "Case studies",
+    "title": "Four ways to improve a real product.",
+    "lead": "Quality, automation, operations, and system design connected by the same principle: understand before building.",
+    "tabsAria": "Case studies",
+    "labels": {
+      "challenge": "Challenge",
+      "action": "Intervention",
+      "outcome": "Outcome"
+    },
+    "acelera": {
+      "tabTitle": "Acelera",
+      "tabMeta": "Product Quality",
+      "kicker": "Acelera · Mar 2026 - Present",
+      "title": "Product quality under real operating pressure.",
+      "link": "Visit Acelera",
+      "lead": "I work on a B2B platform connecting strategy, OKRs, KPIs, and backlogs. My contribution focuses on turning ambiguous behavior into reproducible issues and verifiable improvements.",
+      "challenge": "Critical flows with full-page reloads, multilingual inconsistencies, fragile UI states, and navigation friction.",
+      "action": "Reproduction, severity classification, clear evidence, functional and regression validation, and follow-up after the fix.",
+      "outcome": "150+ bugs validated, 45+ resolved or managed, and 5+ hypercritical cases addressed.",
+      "visualAria": "Representation of the product quality workflow",
+      "visualStatus": "Evidence ready",
+      "visualFocusLabel": "Priority criterion",
+      "visualFocus": "User impact",
+      "visualFocusText": "Severity, scope, reproducibility, and regression risk.",
+      "severityHyper": "Hypercritical",
+      "severityCritical": "Critical",
+      "severityMedium": "Medium",
+      "issueOne": "Full reload in a key flow",
+      "issueTwo": "Consistency across languages",
+      "issueThree": "Interaction friction",
+      "stateValidated": "Validated",
+      "stateTracked": "In progress",
+      "stateDocumented": "Documented"
+    },
+    "bot": {
+      "tabTitle": "Serverless bot",
+      "tabMeta": "Automation",
+      "kicker": "Personal project · 2025",
+      "title": "An automation that turns web noise into useful opportunities.",
+      "link": "Open channel",
+      "lead": "I designed a serverless system that identifies courses with active coupons, processes public sources, controls duplicates, and publishes results to Telegram.",
+      "challenge": "Unstructured data, changing links, and the risk of repeating opportunities that had already been published.",
+      "action": "JavaScript on Cloudflare Workers, persistent state in KV, course/coupon deduplication, and Telegram API integration.",
+      "outcome": "More than 7,500 courses shared with 100% discount coupons through a flow with no traditional server.",
+      "visualAria": "Serverless automation architecture",
+      "nodeSource": "Public sources",
+      "nodeProcess": "Parsing + rules",
+      "nodeDedupe": "Deduplication",
+      "nodePublish": "Publishing",
+      "previewTitle": "Course detected",
+      "previewCourse": "Data Analytics Essentials",
+      "previewCoupon": "Active coupon",
+      "previewState": "New state stored in KV"
+    },
+    "erp": {
+      "tabTitle": "Operational ERP",
+      "tabMeta": "Product System",
+      "kicker": "Internal product · Navigable mockup",
+      "title": "Commercial operations turned into a legible system.",
+      "link": "Open demo",
+      "lead": "I conceptualized an ERP to organize opportunities, accounts, owners, stages, and metrics without losing operating context.",
+      "challenge": "Distributed commercial information, manual follow-up, and low visibility into the real state of the pipeline.",
+      "action": "Module architecture, data hierarchy, roles, filters, and contextual detail designed to support the next decision.",
+      "outcome": "A functional mockup demonstrating flows, navigation, search, editing, and metric reading.",
+      "visualAria": "Operational ERP preview",
+      "previewKicker": "Commercial pipeline",
+      "previewTitle": "Opportunity management",
+      "previewButton": "New opportunity",
+      "metricPipeline": "Open pipeline",
+      "metricTicket": "Average ticket",
+      "metricRecords": "Opportunities",
+      "colAccount": "Account",
+      "colAmount": "Amount",
+      "colStage": "Stage"
+    },
+    "tribu": {
+      "tabTitle": "TribuCalma",
+      "tabMeta": "Digital Operations",
+      "kicker": "TribuCalma · Nov - Dec 2025",
+      "title": "Less digital friction, greater operating stability.",
+      "lead": "I supported technical diagnosis, flow analysis, and improvement prototyping to create a more stable and easier-to-navigate web experience.",
+      "challenge": "Technical issues, unclear journeys, and internal digital processes with room for automation.",
+      "action": "Diagnosis, metrics analysis, alternative evaluation, and prototyping of structural and UX improvements.",
+      "outcome": "Stability improvements reaching +25% of users and a reported 20-30% reduction in navigation friction.",
+      "visualAria": "Representation of an improved user journey",
+      "visualStatus": "Optimized flow",
+      "journeyEntry": "Entry",
+      "journeyEntryText": "User intent",
+      "journeyDiagnosis": "Diagnosis",
+      "journeyDiagnosisText": "Friction points",
+      "journeyOutcome": "Clear journey",
+      "journeyOutcomeText": "Lower drop-off",
+      "resultStability": "stability reach",
+      "resultFriction": "less reported friction"
+    }
+  },
+  "work": {
+    "eyebrow": "Selected web work",
+    "title": "Web work where clarity is also part of the product.",
+    "simplexityRole": "Astro · Frontend · Executive UX",
+    "aceleraRole": "Astro · i18n · SaaS landing"
   },
   "experience": {
-    "eyebrow": "Track record",
-    "title": "Experience connecting product, quality, and continuous improvement.",
-    "aceleraDate": "Mar 2026 - Current",
-    "aceleraRole": "Product Developer · Acelera",
-    "aceleraText": "I develop, validate, and improve a strategic execution platform that connects planning, OKRs, KPIs, and backlogs. I have validated more than 150 bugs and resolved or managed hypercritical, critical, and non-critical issues, including failures that triggered full page reloads, multilingual inconsistencies, and UX friction.",
-    "tribuDate": "Nov 2025 - Dec 2025",
-    "tribuRole": "Digital Operations and Web Development Assistant · TribuCalma",
-    "tribuTextOne": "Technical diagnosis, metrics analysis, UX improvements, and flow optimization to increase site stability and retention. I supported web issue detection, user-behavior review, and prioritization of navigation, content, and digital-experience improvements.",
-    "tribuTextTwo": "I also researched internal automation opportunities and technology improvements to reduce manual work, organize operational processes, and make digital performance easier to measure.",
-    "mentorDate": "Mar 2025 - Dec 2025",
-    "mentorRole": "Junior Mentor · Universidad Científica del Sur",
-    "mentorTextOne": "Academic mentoring in mathematics for first-cycle students, strengthening fundamentals, problem solving, and study habits. I prepared support material, explained procedures step by step, and adapted communication to each student's level.",
-    "mentorTextTwo": "This experience strengthened my ability to organize complex ideas, communicate precisely, and follow up on other people's progress."
-  },
-  "projects": {
-    "eyebrow": "Projects",
-    "title": "Automations and products designed to make operations better.",
-    "botTitle": "Free course coupon bot",
-    "botTextOne": "A serverless automation that checks public sources, detects new course cards, opens course details, obtains the final Udemy link with the coupon applied, and publishes opportunities to Telegram.",
-    "botTextTwo": "It has released more than 7,500 courses that are usually paid and, through coupons, reach a 100% discount so the community can claim and keep them in their accounts.",
-    "botTextThree": "It controls duplicates with persistent state: it avoids resending courses already published, but allows reposting when a new coupon code appears for the same course.",
-    "botCta": "Open bot",
-    "deliveryTitle": "Shipment management app for a small business",
-    "deliveryTextOne": "Application to manage shipments and support operational package tracking. It includes separate user and administrator profiles, allowing shipment states to be created, queried, and updated.",
-    "deliveryTextTwo": "The flow helps a small business organize logistics, centralize information, and provide clearer tracking for the final customer.",
-    "deliveryChipOne": "Shipment management",
-    "deliveryChipFour": "Operational UX"
-  },
-  "built": {
-    "eyebrow": "What I have built",
-    "title": "Astro websites, SaaS product work, and an ERP.",
-    "simplexityTitle": "SimplexityLab",
-    "simplexityText": "I built the Astro website for a multi-intelligent strategy proposal: a sober, executive experience focused on making a complex methodology feel clear.",
-    "simplexityCta": "View website",
-    "aceleraTitle": "Acelera.io",
-    "aceleraText": "I supported the multilingual evolution of a SaaS landing page centered on strategic execution, OKRs, KPIs, and reporting. The work required content consistency, navigation care, and a coherent experience across languages.",
-    "aceleraCta": "View website",
-    "erpTitle": "Operational ERP",
-    "erpText": "I built an ERP to organize internal processes, roles, and management flows. I will link a navigable mockup here to better show the product logic and its main screens.",
-    "erpCta": "ERP mockup"
-  },
-  "erp": {
-    "pageTitle": "ERP Mockup | Joseph Moreno",
-    "eyebrow": "ERP tour",
-    "title": "A navigable mockup that explains how the commercial flow works.",
-    "sidebarAria": "ERP navigation",
-    "brandTitle": "Operational ERP",
-    "brandSubtitle": "Pipeline",
-    "navAria": "ERP modules",
-    "navIdentity": "Identity",
-    "navOpportunities": "Opportunities",
-    "navCommissions": "Commissions",
-    "navContacts": "Contacts",
-    "navIntegrations": "Integrations",
-    "crumb": "Opportunities / Commercial pipeline",
-    "workspaceTitle": "Opportunity management",
-    "usersButton": "Users",
-    "createButton": "Create opportunity",
-    "tabsAria": "ERP views",
-    "tabPipeline": "Pipeline",
-    "tabAccounts": "Accounts",
-    "tabContacts": "Contacts",
-    "tabReports": "Reports",
-    "metricPipeline": "Open pipeline",
-    "metricTicket": "Average ticket",
-    "metricRecords": "Opportunities",
-    "tableAria": "Opportunities table",
-    "colOpportunity": "Opportunity",
-    "colCompany": "Company",
-    "colProduct": "Product",
-    "colAmount": "Amount",
-    "colStatus": "Status",
-    "detailKicker": "Selected detail",
-    "detailProduct": "Product",
-    "detailAmount": "Amount",
-    "detailOwner": "Owner",
-    "detailStage": "Stage",
-    "detailNote": "The side panel summarizes what matters for the next step: account, amount, owner, stage, and commercial context.",
-    "tourLabel": "How it works",
-    "stepOneTitle": "1. The team enters the pipeline",
-    "stepOneText": "The central view gathers commercial opportunities with anonymized company, product, amount, and status so the team can prioritize quickly.",
-    "stepTwoTitle": "2. A new opportunity is created",
-    "stepTwoText": "The main button starts the registration flow, connecting account, product, estimated amount, owner, and process stage.",
-    "stepThreeTitle": "3. The detail is reviewed",
-    "stepThreeText": "Selecting a row updates the right panel with an operational summary for follow-up, negotiation, or closing.",
-    "stepFourTitle": "4. Progress is measured",
-    "stepFourText": "The top metrics show open pipeline, average ticket, and opportunity count without forcing the user into heavy reports."
-  },
-  "studies": {
-    "eyebrow": "Studies",
-    "title": "Academic foundation reinforced with applied analytics.",
-    "degreeDate": "August 2022 - Current",
-    "degreeTitle": "Business and Systems Engineering · Universidad Científica del Sur",
-    "degreeText": "Training focused on systems, processes, business, and technology. Recognized in the top 10% for academic performance.",
-    "ciscoDate": "July 2025",
-    "ciscoTitle": "Data Analytics Essentials · Cisco Networking Academy",
-    "ciscoText": "Certification focused on data analysis, ETL, SQL, and foundations for automation and reporting."
+    "eyebrow": "Experience",
+    "title": "Product, operations, and communication across one trajectory.",
+    "lead": "My experience combines technical execution with an equally important skill: making visible what is happening and what should happen next.",
+    "cvCta": "View full resume",
+    "acelera": {
+      "date": "Mar 2026 - Present",
+      "role": "Product Developer",
+      "pointOne": "Validation of critical flows, regression, UI states, and multilingual consistency.",
+      "pointTwo": "Issue documentation and follow-up to accelerate decisions and fixes.",
+      "pointThree": "Work on a B2B product for strategy, OKRs, KPIs, and backlogs."
+    },
+    "tribu": {
+      "date": "Nov 2025 - Dec 2025",
+      "role": "Digital Operations and Web Development Assistant",
+      "pointOne": "Technical diagnosis and behavior analysis to prioritize web improvements.",
+      "pointTwo": "Structure and UX prototyping to reduce navigation friction.",
+      "pointThree": "Automation research to organize internal processes."
+    },
+    "mentor": {
+      "date": "Mar 2025 - Dec 2025",
+      "company": "Universidad Científica del Sur",
+      "role": "Junior Mentor",
+      "pointOne": "Mathematics support for students in their first academic cycles.",
+      "pointTwo": "Learning material preparation and step-by-step explanations adapted to each level.",
+      "pointThree": "Academic follow-up through clear and structured communication.",
+      "tagOne": "Communication",
+      "tagTwo": "Analytical thinking"
+    }
   },
   "playbook": {
-    "eyebrow": "Technical playbook",
-    "title": "How I turn bugs, data, and AI into actionable improvements.",
-    "stepOneTitle": "Reproducible diagnosis",
-    "stepOneText": "I gather context, steps, environment, severity, visual evidence, and expected behavior to reduce ambiguity before proposing a fix.",
-    "stepTwoTitle": "AI-assisted development",
-    "stepTwoText": "I use Codex and Claude to accelerate analysis, refactor, generate hypotheses, review edge cases, and build solutions without losing my own technical judgment.",
-    "stepThreeTitle": "Impact-based validation",
-    "stepThreeText": "I prioritize critical flows, regression, UI states, language variants, and sensitive data to ensure improvements actually reach the user.",
-    "stepFourTitle": "Documented learning",
-    "stepFourText": "I turn findings into checklists, reusable prompts, acceptance criteria, and technical notes so the team moves with less friction."
+    "eyebrow": "Operating playbook",
+    "title": "A simple method for problems that are not always simple.",
+    "lead": "Reproducible diagnosis, impact-based priority, validation, and documented learning.",
+    "stepOne": {
+      "title": "Understand",
+      "text": "I gather context, environment, steps, and expected behavior before proposing a solution."
+    },
+    "stepTwo": {
+      "title": "Prioritize",
+      "text": "I combine severity, scope, frequency, and risk to focus effort where it changes the experience."
+    },
+    "stepThree": {
+      "title": "Resolve and validate",
+      "text": "I use development and AI as accelerators, then validate functionality, regression, language, and data."
+    },
+    "stepFour": {
+      "title": "Leave a system",
+      "text": "I turn findings into evidence, acceptance criteria, checklists, and reusable learning."
+    }
   },
-  "skills": {
+  "stack": {
     "eyebrow": "Stack",
-    "title": "Tools to develop, validate, measure, and automate.",
-    "filtersAria": "Skill filters",
-    "filterAll": "All",
-    "filterAi": "AI",
-    "dataValidation": "Data analysis and validation",
-    "functionalTesting": "Functional testing",
-    "regression": "Regression",
-    "severity": "Severity prioritization",
-    "i18n": "i18n / multilingual control",
-    "issueDocs": "Issue documentation",
-    "aiDevelopment": "AI-assisted development",
-    "promptEngineering": "Prompt engineering",
-    "aiEdgeCases": "AI edge-case analysis",
-    "communication": "Effective communication",
-    "problemSolving": "Problem solving",
-    "organization": "Organization and follow-up",
-    "english": "English B2"
+    "title": "Tools chosen for the problem, not the trend.",
+    "lead": "Five connected areas for developing, validating, measuring, and automating.",
+    "tabsAria": "Areas of expertise",
+    "qa": {
+      "tab": "Product & QA",
+      "title": "Quality across the complete cycle.",
+      "text": "From reproducing an issue to confirming the solution works across states, languages, and adjacent flows."
+    },
+    "data": {
+      "tab": "Data",
+      "title": "Data turned into legible decisions.",
+      "text": "Cleaning, validation, analysis, and reporting to detect patterns and support a recommendation."
+    },
+    "dev": {
+      "tab": "Development",
+      "title": "Code to materialize and test an idea.",
+      "text": "Web development, scripting, and version control to move from a hypothesis to a testable solution."
+    },
+    "cloud": {
+      "tab": "Cloud & Automation",
+      "title": "Lightweight, persistent, observable automation.",
+      "text": "Integrations that process information, preserve state, and trigger actions without heavy infrastructure."
+    },
+    "ai": {
+      "tab": "Applied AI",
+      "title": "AI as a multiplier for judgment.",
+      "text": "I use it to explore hypotheses, review edge cases, develop, and document; the final decision remains human and verifiable."
+    },
+    "soft": {
+      "label": "How I collaborate",
+      "value": "Analytical thinking · effective communication · organization · follow-up · problem solving"
+    }
   },
-  "languages": {
-    "eyebrow": "Languages",
-    "title": "Adaptable communication for bilingual teams and users.",
-    "spanishLevel": "Native",
-    "spanishTitle": "Spanish",
-    "spanishText": "Clear communication for documentation, technical reports, bug follow-up, and product coordination.",
-    "englishTitle": "English",
-    "englishText": "Training at UCSUR Language Center with Cambridge methodology. Technical reading and functional communication in digital contexts.",
-    "siteTitle": "Clean architecture",
-    "siteText": "Structure separated by responsibility: translatable content in JSON, modular scripts, centralized styles, and organized assets to make maintenance and scaling easier."
+  "education": {
+    "eyebrow": "Education",
+    "title": "Engineering to connect business, processes, and technology.",
+    "degree": {
+      "date": "Aug 2022 - Present",
+      "title": "Business and Systems Engineering",
+      "school": "Universidad Científica del Sur",
+      "badge": "Top 10% academically"
+    },
+    "cisco": {
+      "date": "Jul 2025"
+    },
+    "languages": {
+      "label": "Languages",
+      "title": "Native Spanish · Functional English",
+      "text": "Cambridge-based training at the UCSUR Language Center; technical reading and functional communication."
+    }
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Shall we build something that works better?",
-    "text": "I am open to collaborating on product, QA, automation, and applied analytics, especially where quality directly impacts the user experience."
+    "title": "Let us build products with better quality, data, and judgment.",
+    "text": "I am open to conversations about product, QA, automation, and applied analytics.",
+    "cvCta": "Download resume",
+    "location": "Lima, Peru · Open to opportunities and collaborations"
+  },
+  "footer": {
+    "note": "Designed as a product. Validated with judgment.",
+    "backToTop": "Back to top"
   }
 }

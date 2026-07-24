@@ -58,6 +58,18 @@
         });
     };
 
+    const updateLanguageToggle = (language) => {
+        document.querySelectorAll("[data-language-option]").forEach((option) => {
+            const isActive = option.dataset.languageOption === language;
+            option.classList.toggle("active", isActive);
+            option.setAttribute("aria-hidden", String(!isActive));
+        });
+
+        if (languageToggle) {
+            languageToggle.dataset.currentLanguage = language;
+        }
+    };
+
     const applyLanguage = async (language, shouldSave = false) => {
         const nextLanguage = normalizeLanguage(language);
         await Promise.all([loadDictionary(fallbackLanguage), loadDictionary(nextLanguage)]);
@@ -68,6 +80,7 @@
 
         applyTextTranslations(nextLanguage);
         applyAttributeTranslations(nextLanguage);
+        updateLanguageToggle(nextLanguage);
         document.title = getTranslation("meta.title", nextLanguage);
 
         if (shouldSave) {

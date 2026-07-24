@@ -1,369 +1,747 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="meta.description" data-i18n-attr="content:meta.description">
-    <title data-i18n="meta.title">meta.title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio de Joseph Moreno Inca, Product Developer especializado en QA, automatización, datos e IA aplicada a producto." data-i18n-attr="content:meta.description">
+    <meta name="theme-color" content="#f4f1e9">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ialexis.tech/">
+    <meta property="og:title" content="Joseph Moreno Inca | Product Developer" data-i18n-attr="content:meta.ogTitle">
+    <meta property="og:description" content="Convierto bugs, datos e IA en mejoras accionables de producto." data-i18n-attr="content:meta.ogDescription">
+    <meta property="og:image" content="https://ialexis.tech/assets/images/og-joseph-moreno.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Joseph Moreno Inca · Product Developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ialexis.tech/assets/images/og-joseph-moreno.png">
+    <link rel="canonical" href="https://ialexis.tech/">
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/main.css">
+    <title data-i18n="meta.title">Joseph Moreno Inca | Product Developer</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Joseph Alexis Moreno Inca",
+            "url": "https://ialexis.tech/",
+            "image": "https://ialexis.tech/assets/images/joseph-moreno.jpg",
+            "jobTitle": "Product Developer",
+            "email": "mailto:josephmorenoinca@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Lima",
+                "addressCountry": "PE"
+            },
+            "sameAs": [
+                "https://linkedin.com/in/josephinca"
+            ],
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Universidad Científica del Sur"
+            }
+        }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content" data-i18n="accessibility.skip">Saltar al contenido</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
     <header class="site-header">
-        <a class="brand" href="#inicio" aria-label="nav.homeAria" data-i18n-attr="aria-label:nav.homeAria">
-            <span>JM</span>
-        </a>
+        <div class="header-inner">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio" data-i18n-attr="aria-label:nav.homeAria">
+                <span class="brand-mark">JM</span>
+                <span class="brand-copy">
+                    <strong>Joseph Moreno</strong>
+                    <small>Product Developer</small>
+                </span>
+            </a>
 
-        <div class="header-actions">
-            <button class="language-toggle" type="button" aria-label="language.toggleAria" title="language.toggleTitle" data-i18n-attr="aria-label:language.toggleAria;title:language.toggleTitle">
-                <span class="language-option">ES</span>
-                <span class="language-option">EN</span>
-                <span class="language-thumb" aria-hidden="true"></span>
-            </button>
+            <nav class="main-nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.primaryAria">
+                <a href="#impacto" data-i18n="nav.impact">Impacto</a>
+                <a href="#casos" data-i18n="nav.cases">Casos</a>
+                <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+                <a href="#stack" data-i18n="nav.stack">Stack</a>
+                <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+            </nav>
 
-            <button class="theme-toggle" type="button" aria-label="theme.toggle" title="theme.toggle">
-                <span class="theme-icon" aria-hidden="true"></span>
-            </button>
-
-            <button class="nav-toggle" type="button" aria-label="nav.menuAria" aria-expanded="false" data-i18n-attr="aria-label:nav.menuAria">
-                <span></span>
-                <span></span>
-            </button>
+            <div class="header-actions">
+                <button class="language-toggle" type="button" aria-label="Cambiar idioma" title="Cambiar idioma" data-i18n-attr="aria-label:language.toggleAria;title:language.toggleTitle">
+                    <span data-language-option="es">ES</span>
+                    <span aria-hidden="true">/</span>
+                    <span data-language-option="en">EN</span>
+                </button>
+                <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar a modo oscuro">
+                    <span class="theme-icon" aria-hidden="true"></span>
+                </button>
+                <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-i18n-attr="aria-label:nav.menuAria">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-
-        <nav class="main-nav" aria-label="nav.primaryAria" data-i18n-attr="aria-label:nav.primaryAria">
-            <a href="#profile" data-i18n="nav.profile">nav.profile</a>
-            <a href="#experience" data-i18n="nav.experience">nav.experience</a>
-            <a href="#projects" data-i18n="nav.projects">nav.projects</a>
-            <a href="#built" data-i18n="nav.built">nav.built</a>
-            <a href="#studies" data-i18n="nav.studies">nav.studies</a>
-            <a href="#playbook" data-i18n="nav.playbook">nav.playbook</a>
-            <a href="#skills" data-i18n="nav.skills">nav.skills</a>
-            <a href="#languages" data-i18n="nav.languages">nav.languages</a>
-            <a href="#contact" data-i18n="nav.contact">nav.contact</a>
-        </nav>
     </header>
 
-    <main id="inicio">
-        <section class="hero section-band">
-            <div class="hero-copy reveal">
-                <p class="eyebrow" data-i18n="hero.eyebrow">hero.eyebrow</p>
-                <h1>Joseph Moreno Inca</h1>
-                <p class="hero-lead" data-i18n="hero.lead">hero.lead</p>
-                <div class="hero-actions">
-                    <a class="button primary" href="#projects" data-i18n="hero.projectsCta">hero.projectsCta</a>
-                    <a class="button ghost" href="mailto:josephmorenoinca@gmail.com" data-i18n="hero.emailCta">hero.emailCta</a>
-                </div>
-            </div>
-
-            <aside class="quality-panel reveal" aria-label="hero.panelAria" data-i18n-attr="aria-label:hero.panelAria">
-                <div class="panel-top">
-                    <div>
-                        <span class="panel-label">Sprint Health</span>
-                        <strong>Product Ready</strong>
-                    </div>
-                    <span class="status-pill">Live</span>
-                </div>
-                <div class="signal-grid">
-                    <div class="signal-card coral">
-                        <span>150+</span>
-                        <p data-i18n="hero.metricBugs">hero.metricBugs</p>
-                    </div>
-                    <div class="signal-card aqua">
-                        <span>45+</span>
-                        <p data-i18n="hero.metricManaged">hero.metricManaged</p>
-                    </div>
-                    <div class="signal-card lime">
-                        <span>5+</span>
-                        <p data-i18n="hero.metricCritical">hero.metricCritical</p>
+    <main id="main-content">
+        <section id="inicio" class="hero">
+            <div class="shell hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow hero-status">
+                        <span aria-hidden="true"></span>
+                        <span data-i18n="hero.eyebrow">Lima, Perú · Product Developer</span>
+                    </p>
+                    <h1>Joseph Moreno Inca</h1>
+                    <p class="hero-statement" data-i18n="hero.statement">Convierto bugs, datos e IA en mejoras accionables de producto.</p>
+                    <p class="hero-summary" data-i18n="hero.summary">Product Developer especializado en QA, automatización, análisis de datos e IA aplicada a productos digitales.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#casos" data-i18n="hero.casesCta">Ver case studies</a>
+                        <a class="button button-secondary" href="assets/documents/joseph-moreno-cv.pdf" download data-i18n="hero.cvCta">Descargar CV</a>
+                        <a class="text-link" href="mailto:josephmorenoinca@gmail.com" data-i18n="hero.contactCta">Contactar</a>
                     </div>
                 </div>
-                <div class="checklist">
-                    <div><span></span> <em data-i18n="hero.checkHighImpact">hero.checkHighImpact</em></div>
-                    <div><span></span> <em data-i18n="hero.checkRegression">hero.checkRegression</em></div>
-                    <div><span></span> <em data-i18n="hero.checkLanguage">hero.checkLanguage</em></div>
+
+                <div class="portrait-column reveal">
+                    <figure class="portrait-frame">
+                        <div class="portrait-index" aria-hidden="true">01 / PROFILE</div>
+                        <img src="assets/images/joseph-moreno.jpg" width="1200" height="1148" alt="Retrato profesional de Joseph Moreno Inca" data-i18n-attr="alt:hero.photoAlt">
+                        <figcaption>
+                            <span data-i18n="hero.photoCaption">Producto con criterio técnico y visión de negocio.</span>
+                            <strong>Top 10%</strong>
+                        </figcaption>
+                    </figure>
+                    <div class="portrait-signals" aria-label="Indicadores destacados" data-i18n-attr="aria-label:hero.signalsAria">
+                        <div><strong>150+</strong><span data-i18n="hero.signalBugs">bugs validados</span></div>
+                        <div><strong>7,500+</strong><span data-i18n="hero.signalCourses">cursos compartidos</span></div>
+                        <div><strong>Top 10%</strong><span data-i18n="hero.signalAcademic">rendimiento académico</span></div>
+                    </div>
                 </div>
-            </aside>
-        </section>
 
-        <section id="profile" class="profile section-band">
-            <div class="section-heading reveal">
-                <p class="eyebrow" data-i18n="profile.eyebrow">profile.eyebrow</p>
-                <h2 data-i18n="profile.title">profile.title</h2>
+                <div class="hero-context reveal" aria-label="Resumen profesional" data-i18n-attr="aria-label:hero.contextAria">
+                    <div>
+                        <span data-i18n="hero.focusLabel">Foco</span>
+                        <strong data-i18n="hero.focusValue">Producto, QA y automatización</strong>
+                    </div>
+                    <div>
+                        <span data-i18n="hero.educationLabel">Formación</span>
+                        <strong data-i18n="hero.educationValue">Ingeniería Empresarial y de Sistemas</strong>
+                    </div>
+                </div>
             </div>
-            <div class="profile-grid">
-                <article class="profile-card reveal">
-                    <h3 data-i18n="profile.whatTitle">profile.whatTitle</h3>
-                    <p data-i18n="profile.whatText">profile.whatText</p>
-                </article>
-                <article class="profile-card reveal">
-                    <h3 data-i18n="profile.howTitle">profile.howTitle</h3>
-                    <p data-i18n="profile.howText">profile.howText</p>
-                </article>
-                <article class="profile-card reveal">
-                    <h3 data-i18n="profile.nowTitle">profile.nowTitle</h3>
-                    <p data-i18n="profile.nowText">profile.nowText</p>
-                </article>
+            <div class="shell hero-foot">
+                <span data-i18n="hero.footnote">QA funcional · Datos · Cloudflare · APIs · IA aplicada</span>
+                <a href="#impacto" data-i18n="hero.scrollCta">Explorar impacto</a>
             </div>
         </section>
 
-        <section id="experience" class="timeline-section section-band">
-            <div class="section-heading reveal">
-                <p class="eyebrow" data-i18n="experience.eyebrow">experience.eyebrow</p>
-                <h2 data-i18n="experience.title">experience.title</h2>
-            </div>
-            <div class="timeline">
-                <article class="timeline-item reveal">
-                    <span class="date" data-i18n="experience.aceleraDate">experience.aceleraDate</span>
+        <section id="impacto" class="impact-section section">
+            <div class="shell">
+                <div class="section-intro reveal">
+                    <p class="section-number">02 / <span data-i18n="impact.eyebrow">Impacto</span></p>
                     <div>
-                        <h3 data-i18n="experience.aceleraRole">experience.aceleraRole</h3>
-                        <p data-i18n="experience.aceleraText">experience.aceleraText</p>
+                        <h2 data-i18n="impact.title">El trabajo se entiende mejor cuando deja evidencia.</h2>
+                        <p data-i18n="impact.lead">Resultados de producto, automatización y operaciones digitales reunidos en una sola lectura.</p>
                     </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <span class="date" data-i18n="experience.tribuDate">experience.tribuDate</span>
-                    <div>
-                        <h3 data-i18n="experience.tribuRole">experience.tribuRole</h3>
-                        <p data-i18n="experience.tribuTextOne">experience.tribuTextOne</p>
-                        <p data-i18n="experience.tribuTextTwo">experience.tribuTextTwo</p>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <span class="date" data-i18n="experience.mentorDate">experience.mentorDate</span>
-                    <div>
-                        <h3 data-i18n="experience.mentorRole">experience.mentorRole</h3>
-                        <p data-i18n="experience.mentorTextOne">experience.mentorTextOne</p>
-                        <p data-i18n="experience.mentorTextTwo">experience.mentorTextTwo</p>
-                    </div>
-                </article>
+                </div>
+
+                <div class="impact-grid">
+                    <article class="impact-item reveal">
+                        <strong><span data-count="150">150</span>+</strong>
+                        <h3 data-i18n="impact.bugsTitle">Bugs validados</h3>
+                        <p data-i18n="impact.bugsText">Flujos funcionales, estados de UI, regresión e i18n.</p>
+                    </article>
+                    <article class="impact-item reveal">
+                        <strong><span data-count="45">45</span>+</strong>
+                        <h3 data-i18n="impact.managedTitle">Resueltos o gestionados</h3>
+                        <p data-i18n="impact.managedText">Seguimiento desde la evidencia hasta la validación final.</p>
+                    </article>
+                    <article class="impact-item reveal">
+                        <strong><span data-count="5">5</span>+</strong>
+                        <h3 data-i18n="impact.criticalTitle">Casos hipercríticos</h3>
+                        <p data-i18n="impact.criticalText">Incidencias con impacto directo en flujos clave.</p>
+                    </article>
+                    <article class="impact-item reveal">
+                        <strong><span data-count="7500">7,500</span>+</strong>
+                        <h3 data-i18n="impact.coursesTitle">Cursos compartidos</h3>
+                        <p data-i18n="impact.coursesText">Automatización serverless con cupones al 100%.</p>
+                    </article>
+                    <article class="impact-item reveal">
+                        <strong>+<span data-count="25">25</span>%</strong>
+                        <h3 data-i18n="impact.stabilityTitle">Usuarios beneficiados</h3>
+                        <p data-i18n="impact.stabilityText">Por mejoras de estabilidad reportadas en TribuCalma.</p>
+                    </article>
+                    <article class="impact-item reveal">
+                        <strong><span data-count="20">20</span>-30%</strong>
+                        <h3 data-i18n="impact.frictionTitle">Menos fricción</h3>
+                        <p data-i18n="impact.frictionText">Reducción reportada en navegación y experiencia.</p>
+                    </article>
+                </div>
+                <p class="evidence-note reveal" data-i18n="impact.note">Métricas provenientes de experiencia profesional, CV y proyectos personales.</p>
             </div>
         </section>
 
-        <section id="projects" class="projects section-band">
-            <div class="section-heading reveal">
-                <p class="eyebrow" data-i18n="projects.eyebrow">projects.eyebrow</p>
-                <h2 data-i18n="projects.title">projects.title</h2>
+        <section id="casos" class="cases-section section">
+            <div class="shell">
+                <div class="section-intro reveal">
+                    <p class="section-number">03 / <span data-i18n="cases.eyebrow">Case studies</span></p>
+                    <div>
+                        <h2 data-i18n="cases.title">Cuatro formas de mejorar un producto real.</h2>
+                        <p data-i18n="cases.lead">Calidad, automatización, operaciones y diseño de sistemas conectados por el mismo criterio: entender antes de construir.</p>
+                    </div>
+                </div>
+
+                <div class="case-workbench reveal">
+                    <div class="case-tabs" role="tablist" aria-label="Casos de estudio" data-i18n-attr="aria-label:cases.tabsAria">
+                        <button id="case-tab-acelera" class="case-tab active" type="button" role="tab" aria-selected="true" aria-controls="case-acelera" data-case="acelera">
+                            <span>01</span>
+                            <strong data-i18n="cases.acelera.tabTitle">Acelera</strong>
+                            <small data-i18n="cases.acelera.tabMeta">Product Quality</small>
+                        </button>
+                        <button id="case-tab-bot" class="case-tab" type="button" role="tab" aria-selected="false" aria-controls="case-bot" tabindex="-1" data-case="bot">
+                            <span>02</span>
+                            <strong data-i18n="cases.bot.tabTitle">Bot serverless</strong>
+                            <small data-i18n="cases.bot.tabMeta">Automation</small>
+                        </button>
+                        <button id="case-tab-erp" class="case-tab" type="button" role="tab" aria-selected="false" aria-controls="case-erp" tabindex="-1" data-case="erp">
+                            <span>03</span>
+                            <strong data-i18n="cases.erp.tabTitle">ERP operativo</strong>
+                            <small data-i18n="cases.erp.tabMeta">Product System</small>
+                        </button>
+                        <button id="case-tab-tribu" class="case-tab" type="button" role="tab" aria-selected="false" aria-controls="case-tribu" tabindex="-1" data-case="tribu">
+                            <span>04</span>
+                            <strong data-i18n="cases.tribu.tabTitle">TribuCalma</strong>
+                            <small data-i18n="cases.tribu.tabMeta">Digital Operations</small>
+                        </button>
+                    </div>
+
+                    <div class="case-panels">
+                        <article id="case-acelera" class="case-panel active" role="tabpanel" aria-labelledby="case-tab-acelera" data-case-panel="acelera">
+                            <header class="case-header">
+                                <div class="case-identity">
+                                    <img src="assets/logos/acelera-logo.png" width="512" height="512" alt="Acelera">
+                                    <div>
+                                        <p data-i18n="cases.acelera.kicker">Acelera · Mar 2026 - Actualidad</p>
+                                        <h3 data-i18n="cases.acelera.title">Calidad de producto bajo presión operativa real.</h3>
+                                    </div>
+                                </div>
+                                <a class="text-link" href="https://acelera.io/" target="_blank" rel="noreferrer" data-i18n="cases.acelera.link">Conocer Acelera</a>
+                            </header>
+
+                            <p class="case-lead" data-i18n="cases.acelera.lead">Trabajo sobre una plataforma B2B que conecta estrategia, OKRs, KPIs y backlogs. Mi aporte se centra en convertir comportamientos ambiguos en incidencias reproducibles y mejoras verificables.</p>
+
+                            <div class="case-story">
+                                <div>
+                                    <span data-i18n="cases.labels.challenge">Desafío</span>
+                                    <p data-i18n="cases.acelera.challenge">Flujos críticos con recargas completas, inconsistencias multidioma, estados de UI frágiles y fricción de navegación.</p>
+                                </div>
+                                <div>
+                                    <span data-i18n="cases.labels.action">Intervención</span>
+                                    <p data-i18n="cases.acelera.action">Reproducción, clasificación por severidad, evidencia clara, validación funcional y regresiva, y seguimiento posterior al fix.</p>
+                                </div>
+                                <div>
+                                    <span data-i18n="cases.labels.outcome">Resultado</span>
+                                    <p data-i18n="cases.acelera.outcome">150+ bugs validados, 45+ resueltos o gestionados y 5+ casos hipercríticos atendidos.</p>
+                                </div>
+                            </div>
+
+                            <div class="product-canvas quality-canvas" aria-label="Representación del flujo de calidad de producto" data-i18n-attr="aria-label:cases.acelera.visualAria">
+                                <div class="canvas-top">
+                                    <div><span class="canvas-dot"></span> Product Quality / Release</div>
+                                    <strong data-i18n="cases.acelera.visualStatus">Evidencia lista</strong>
+                                </div>
+                                <div class="quality-board">
+                                    <div class="quality-summary">
+                                        <span data-i18n="cases.acelera.visualFocusLabel">Criterio de prioridad</span>
+                                        <strong data-i18n="cases.acelera.visualFocus">Impacto en usuario</strong>
+                                        <p data-i18n="cases.acelera.visualFocusText">Severidad, alcance, reproducibilidad y riesgo de regresión.</p>
+                                    </div>
+                                    <div class="issue-list">
+                                        <div class="issue-row">
+                                            <span class="severity severe" data-i18n="cases.acelera.severityHyper">Hipercrítico</span>
+                                            <strong data-i18n="cases.acelera.issueOne">Recarga completa en flujo clave</strong>
+                                            <small data-i18n="cases.acelera.stateValidated">Validado</small>
+                                        </div>
+                                        <div class="issue-row">
+                                            <span class="severity critical" data-i18n="cases.acelera.severityCritical">Crítico</span>
+                                            <strong data-i18n="cases.acelera.issueTwo">Consistencia entre idiomas</strong>
+                                            <small data-i18n="cases.acelera.stateTracked">En seguimiento</small>
+                                        </div>
+                                        <div class="issue-row">
+                                            <span class="severity medium" data-i18n="cases.acelera.severityMedium">Medio</span>
+                                            <strong data-i18n="cases.acelera.issueThree">Fricción de interacción</strong>
+                                            <small data-i18n="cases.acelera.stateDocumented">Documentado</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quality-flow" aria-hidden="true">
+                                    <span>01 · Reproduce</span>
+                                    <i></i>
+                                    <span>02 · Documenta</span>
+                                    <i></i>
+                                    <span>03 · Prioriza</span>
+                                    <i></i>
+                                    <span>04 · Valida</span>
+                                </div>
+                            </div>
+
+                            <div class="case-stack" aria-label="Tecnologías y capacidades">
+                                <span>Functional QA</span><span>Regression</span><span>i18n</span><span>UX</span><span>Issue documentation</span>
+                            </div>
+                        </article>
+
+                        <article id="case-bot" class="case-panel" role="tabpanel" aria-labelledby="case-tab-bot" data-case-panel="bot" hidden>
+                            <header class="case-header">
+                                <div class="case-identity no-logo">
+                                    <span class="case-monogram">CF</span>
+                                    <div>
+                                        <p data-i18n="cases.bot.kicker">Proyecto personal · 2025</p>
+                                        <h3 data-i18n="cases.bot.title">Una automatización que convierte ruido web en oportunidades útiles.</h3>
+                                    </div>
+                                </div>
+                                <a class="text-link" href="https://t.me/gratisudemy" target="_blank" rel="noreferrer" data-i18n="cases.bot.link">Abrir canal</a>
+                            </header>
+
+                            <p class="case-lead" data-i18n="cases.bot.lead">Diseñé un sistema serverless que identifica cursos con cupones activos, procesa fuentes públicas, controla duplicados y publica resultados en Telegram.</p>
+
+                            <div class="case-story">
+                                <div>
+                                    <span data-i18n="cases.labels.challenge">Desafío</span>
+                                    <p data-i18n="cases.bot.challenge">Datos no estructurados, enlaces cambiantes y riesgo de repetir oportunidades que ya habían sido publicadas.</p>
+                                </div>
+                                <div>
+                                    <span data-i18n="cases.labels.action">Intervención</span>
+                                    <p data-i18n="cases.bot.action">JavaScript en Cloudflare Workers, estado persistente en KV, deduplicación por curso/cupón e integración con Telegram API.</p>
+                                </div>
+                                <div>
+                                    <span data-i18n="cases.labels.outcome">Resultado</span>
+                                    <p data-i18n="cases.bot.outcome">Más de 7,500 cursos compartidos con cupones al 100% y un flujo sin servidor tradicional.</p>
+                                </div>
+                            </div>
+
+                            <div class="product-canvas automation-canvas" aria-label="Arquitectura de automatización serverless" data-i18n-attr="aria-label:cases.bot.visualAria">
+                                <div class="canvas-top">
+                                    <div><span class="canvas-dot"></span> Serverless pipeline</div>
+                                    <strong>Cloudflare</strong>
+                                </div>
+                                <div class="automation-layout">
+                                    <div class="pipeline">
+                                        <div class="pipeline-node">
+                                            <span>01</span>
+                                            <strong data-i18n="cases.bot.nodeSource">Fuentes públicas</strong>
+                                            <small>HTML / cards</small>
+                                        </div>
+                                        <div class="pipeline-connector" aria-hidden="true"></div>
+                                        <div class="pipeline-node active">
+                                            <span>02</span>
+                                            <strong>Worker</strong>
+                                            <small data-i18n="cases.bot.nodeProcess">Parseo + reglas</small>
+                                        </div>
+                                        <div class="pipeline-connector" aria-hidden="true"></div>
+                                        <div class="pipeline-node">
+                                            <span>03</span>
+                                            <strong>KV State</strong>
+                                            <small data-i18n="cases.bot.nodeDedupe">Deduplicación</small>
+                                        </div>
+                                        <div class="pipeline-connector" aria-hidden="true"></div>
+                                        <div class="pipeline-node final">
+                                            <span>04</span>
+                                            <strong>Telegram</strong>
+                                            <small data-i18n="cases.bot.nodePublish">Publicación</small>
+                                        </div>
+                                    </div>
+                                    <div class="telegram-preview">
+                                        <div class="telegram-head"><span>TG</span><strong data-i18n="cases.bot.previewTitle">Curso detectado</strong></div>
+                                        <p data-i18n="cases.bot.previewCourse">Data Analytics Essentials</p>
+                                        <div><span data-i18n="cases.bot.previewCoupon">Cupón activo</span><strong>100% OFF</strong></div>
+                                        <small data-i18n="cases.bot.previewState">Nuevo estado guardado en KV</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="case-stack" aria-label="Tecnologías y capacidades">
+                                <span>JavaScript</span><span>Cloudflare Workers</span><span>KV</span><span>Telegram Bot API</span><span>APIs</span>
+                            </div>
+                        </article>
+
+                        <article id="case-erp" class="case-panel" role="tabpanel" aria-labelledby="case-tab-erp" data-case-panel="erp" hidden>
+                            <header class="case-header">
+                                <div class="case-identity no-logo">
+                                    <span class="case-monogram amber">ERP</span>
+                                    <div>
+                                        <p data-i18n="cases.erp.kicker">Producto interno · Mockup navegable</p>
+                                        <h3 data-i18n="cases.erp.title">Operación comercial convertida en un sistema legible.</h3>
+                                    </div>
+                                </div>
+                                <a class="text-link" href="erp.html" data-i18n="cases.erp.link">Abrir demo</a>
+                            </header>
+
+                            <p class="case-lead" data-i18n="cases.erp.lead">Conceptualicé un ERP para ordenar oportunidades, cuentas, responsables, etapas y métricas sin perder el contexto operativo.</p>
+
+                            <div class="case-story">
+                                <div>
+                                    <span data-i18n="cases.labels.challenge">Desafío</span>
+                                    <p data-i18n="cases.erp.challenge">Información comercial distribuida, seguimiento manual y baja visibilidad del estado real del pipeline.</p>
+                                </div>
+                                <div>
+                                    <span data-i18n="cases.labels.action">Intervención</span>
+                                    <p data-i18n="cases.erp.action">Arquitectura de módulos, jerarquía de datos, roles, filtros y detalle contextual para decidir el siguiente paso.</p>
+                                </div>
+                                <div>
+                                    <span data-i18n="cases.labels.outcome">Resultado</span>
+                                    <p data-i18n="cases.erp.outcome">Un mockup funcional que demuestra flujos, navegación, búsqueda, edición y lectura de indicadores.</p>
+                                </div>
+                            </div>
+
+                            <div class="product-canvas erp-canvas" aria-label="Vista previa del ERP operativo" data-i18n-attr="aria-label:cases.erp.visualAria">
+                                <div class="erp-sidebar-preview">
+                                    <div class="erp-brand"><span>J</span><strong>Joseph ERP</strong></div>
+                                    <div class="erp-nav-line active"></div>
+                                    <div class="erp-nav-line"></div>
+                                    <div class="erp-nav-line short"></div>
+                                    <div class="erp-nav-line"></div>
+                                </div>
+                                <div class="erp-main-preview">
+                                    <div class="erp-preview-top">
+                                        <div><small data-i18n="cases.erp.previewKicker">Pipeline comercial</small><strong data-i18n="cases.erp.previewTitle">Gestión de oportunidades</strong></div>
+                                        <span data-i18n="cases.erp.previewButton">Nueva oportunidad</span>
+                                    </div>
+                                    <div class="erp-preview-metrics">
+                                        <div><small data-i18n="cases.erp.metricPipeline">Pipeline abierto</small><strong>$143K</strong></div>
+                                        <div><small data-i18n="cases.erp.metricTicket">Ticket promedio</small><strong>$20.4K</strong></div>
+                                        <div><small data-i18n="cases.erp.metricRecords">Oportunidades</small><strong>12</strong></div>
+                                    </div>
+                                    <div class="erp-preview-table">
+                                        <div class="erp-preview-row head"><span>ID</span><span data-i18n="cases.erp.colAccount">Cuenta</span><span data-i18n="cases.erp.colAmount">Monto</span><span data-i18n="cases.erp.colStage">Etapa</span></div>
+                                        <div class="erp-preview-row selected"><span>OP-1046</span><span>Empresa 01</span><span>$25,000</span><span>Open</span></div>
+                                        <div class="erp-preview-row"><span>OP-1043</span><span>Empresa 02</span><span>$18,500</span><span>Proposal</span></div>
+                                        <div class="erp-preview-row"><span>OP-1038</span><span>Empresa 03</span><span>$50,000</span><span>Open</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="case-stack" aria-label="Tecnologías y capacidades">
+                                <span>Product design</span><span>ERP</span><span>Process mapping</span><span>Roles</span><span>Operational UX</span>
+                            </div>
+                        </article>
+
+                        <article id="case-tribu" class="case-panel" role="tabpanel" aria-labelledby="case-tab-tribu" data-case-panel="tribu" hidden>
+                            <header class="case-header">
+                                <div class="case-identity no-logo">
+                                    <span class="case-monogram coral">TC</span>
+                                    <div>
+                                        <p data-i18n="cases.tribu.kicker">TribuCalma · Nov - Dic 2025</p>
+                                        <h3 data-i18n="cases.tribu.title">Menos fricción digital, más estabilidad operativa.</h3>
+                                    </div>
+                                </div>
+                            </header>
+
+                            <p class="case-lead" data-i18n="cases.tribu.lead">Apoyé el diagnóstico técnico, el análisis de flujos y el prototipado de mejoras para una experiencia web más estable y fácil de recorrer.</p>
+
+                            <div class="case-story">
+                                <div>
+                                    <span data-i18n="cases.labels.challenge">Desafío</span>
+                                    <p data-i18n="cases.tribu.challenge">Incidencias técnicas, recorridos poco claros y procesos digitales internos con oportunidades de automatización.</p>
+                                </div>
+                                <div>
+                                    <span data-i18n="cases.labels.action">Intervención</span>
+                                    <p data-i18n="cases.tribu.action">Diagnóstico, análisis de métricas, evaluación de alternativas y prototipado de ajustes de estructura y UX.</p>
+                                </div>
+                                <div>
+                                    <span data-i18n="cases.labels.outcome">Resultado</span>
+                                    <p data-i18n="cases.tribu.outcome">Mejoras de estabilidad para +25% de usuarios y reducción reportada de 20-30% en fricción de navegación.</p>
+                                </div>
+                            </div>
+
+                            <div class="product-canvas journey-canvas" aria-label="Representación de mejora del recorrido de usuario" data-i18n-attr="aria-label:cases.tribu.visualAria">
+                                <div class="canvas-top">
+                                    <div><span class="canvas-dot"></span> Experience flow</div>
+                                    <strong data-i18n="cases.tribu.visualStatus">Flujo optimizado</strong>
+                                </div>
+                                <div class="journey-track">
+                                    <div class="journey-step">
+                                        <span>01</span>
+                                        <strong data-i18n="cases.tribu.journeyEntry">Entrada</strong>
+                                        <small data-i18n="cases.tribu.journeyEntryText">Intención del usuario</small>
+                                    </div>
+                                    <i class="journey-line friction" aria-hidden="true"></i>
+                                    <div class="journey-step">
+                                        <span>02</span>
+                                        <strong data-i18n="cases.tribu.journeyDiagnosis">Diagnóstico</strong>
+                                        <small data-i18n="cases.tribu.journeyDiagnosisText">Puntos de fricción</small>
+                                    </div>
+                                    <i class="journey-line improved" aria-hidden="true"></i>
+                                    <div class="journey-step success">
+                                        <span>03</span>
+                                        <strong data-i18n="cases.tribu.journeyOutcome">Recorrido claro</strong>
+                                        <small data-i18n="cases.tribu.journeyOutcomeText">Menos abandono</small>
+                                    </div>
+                                </div>
+                                <div class="journey-results">
+                                    <div><strong>+25%</strong><span data-i18n="cases.tribu.resultStability">alcance de estabilidad</span></div>
+                                    <div><strong>20-30%</strong><span data-i18n="cases.tribu.resultFriction">menos fricción reportada</span></div>
+                                </div>
+                            </div>
+
+                            <div class="case-stack" aria-label="Tecnologías y capacidades">
+                                <span>Web operations</span><span>UX analysis</span><span>Metrics</span><span>Prototyping</span><span>Automation research</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="selected-work reveal">
+                    <div class="selected-work-intro">
+                        <p class="eyebrow" data-i18n="work.eyebrow">Selected web work</p>
+                        <h3 data-i18n="work.title">Piezas web donde la claridad también es producto.</h3>
+                    </div>
+                    <a class="work-row" href="https://www.simplexitylab.com/" target="_blank" rel="noreferrer">
+                        <img src="assets/logos/simplexitylab-logo.png" width="747" height="74" alt="SimplexityLab">
+                        <span data-i18n="work.simplexityRole">Astro · Frontend · UX ejecutiva</span>
+                        <strong aria-hidden="true">↗</strong>
+                    </a>
+                    <a class="work-row" href="https://acelera.io/" target="_blank" rel="noreferrer">
+                        <span class="work-acelera"><img src="assets/logos/acelera-logo.png" width="512" height="512" alt=""> Acelera.io</span>
+                        <span data-i18n="work.aceleraRole">Astro · i18n · Landing SaaS</span>
+                        <strong aria-hidden="true">↗</strong>
+                    </a>
+                </div>
             </div>
-            <div class="project-grid">
-                <article class="project-card featured reveal">
-                    <div class="project-visual bot-visual" aria-hidden="true">
-                        <div class="coupon-card">
-                            <span>100%</span>
-                            <small>OFF</small>
+        </section>
+
+        <section id="experiencia" class="experience-section section">
+            <div class="shell experience-layout">
+                <div class="experience-heading reveal">
+                    <p class="section-number">04 / <span data-i18n="experience.eyebrow">Experiencia</span></p>
+                    <h2 data-i18n="experience.title">Producto, operaciones y comunicación en una misma trayectoria.</h2>
+                    <p data-i18n="experience.lead">Mi experiencia combina ejecución técnica con una capacidad que considero igual de importante: hacer visible qué ocurre y qué conviene hacer después.</p>
+                    <a class="text-link" href="assets/documents/joseph-moreno-cv.pdf" download data-i18n="experience.cvCta">Ver CV completo</a>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date" data-i18n="experience.acelera.date">Mar 2026 - Actualidad</div>
+                        <div class="timeline-body">
+                            <span class="timeline-company">Acelera</span>
+                            <h3 data-i18n="experience.acelera.role">Product Developer</h3>
+                            <ul>
+                                <li data-i18n="experience.acelera.pointOne">Validación de flujos críticos, regresión, estados de UI y consistencia multidioma.</li>
+                                <li data-i18n="experience.acelera.pointTwo">Documentación y seguimiento de incidencias para acelerar decisiones y fixes.</li>
+                                <li data-i18n="experience.acelera.pointThree">Trabajo sobre un producto B2B de estrategia, OKRs, KPIs y backlogs.</li>
+                            </ul>
+                            <div class="timeline-tags"><span>Product QA</span><span>i18n</span><span>UX</span></div>
                         </div>
-                        <div class="telegram-mark"></div>
-                        <div class="course-lines">
-                            <span></span><span></span><span></span>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date" data-i18n="experience.tribu.date">Nov 2025 - Dic 2025</div>
+                        <div class="timeline-body">
+                            <span class="timeline-company">TribuCalma</span>
+                            <h3 data-i18n="experience.tribu.role">Asistente de Operaciones Digitales y Desarrollo Web</h3>
+                            <ul>
+                                <li data-i18n="experience.tribu.pointOne">Diagnóstico técnico y análisis de comportamiento para priorizar mejoras web.</li>
+                                <li data-i18n="experience.tribu.pointTwo">Prototipado de estructura y UX para reducir fricción en navegación.</li>
+                                <li data-i18n="experience.tribu.pointThree">Investigación de automatizaciones para ordenar procesos internos.</li>
+                            </ul>
+                            <div class="timeline-tags"><span>Web Ops</span><span>Analytics</span><span>UX</span></div>
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date" data-i18n="experience.mentor.date">Mar 2025 - Dic 2025</div>
+                        <div class="timeline-body">
+                            <span class="timeline-company" data-i18n="experience.mentor.company">Universidad Científica del Sur</span>
+                            <h3 data-i18n="experience.mentor.role">Mentor Junior</h3>
+                            <ul>
+                                <li data-i18n="experience.mentor.pointOne">Acompañamiento en matemáticas a estudiantes de primeros ciclos.</li>
+                                <li data-i18n="experience.mentor.pointTwo">Preparación de material y explicación paso a paso según cada nivel.</li>
+                                <li data-i18n="experience.mentor.pointThree">Seguimiento académico con comunicación clara y estructurada.</li>
+                            </ul>
+                            <div class="timeline-tags"><span data-i18n="experience.mentor.tagOne">Comunicación</span><span data-i18n="experience.mentor.tagTwo">Pensamiento analítico</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="metodo" class="playbook-section section">
+            <div class="shell">
+                <div class="playbook-heading reveal">
+                    <p class="section-number">05 / <span data-i18n="playbook.eyebrow">Operating playbook</span></p>
                     <div>
-                        <p class="project-type">Serverless + Scraping + Telegram</p>
-                        <h3 data-i18n="projects.botTitle">projects.botTitle</h3>
-                        <p data-i18n="projects.botTextOne">projects.botTextOne</p>
-                        <p data-i18n="projects.botTextTwo">projects.botTextTwo</p>
-                        <p data-i18n="projects.botTextThree">projects.botTextThree</p>
-                        <div class="chips">
-                            <span>JavaScript</span><span>Cloudflare Workers</span><span>KV</span><span>Telegram Bot API</span><span>Wrangler</span>
-                        </div>
-                        <a class="project-link" href="https://t.me/gratisudemy" target="_blank" rel="noreferrer" data-i18n="projects.botCta">projects.botCta</a>
+                        <h2 data-i18n="playbook.title">Un método simple para problemas que no siempre lo son.</h2>
+                        <p data-i18n="playbook.lead">Diagnóstico reproducible, prioridad por impacto, validación y aprendizaje documentado.</p>
                     </div>
-                </article>
+                </div>
+                <div class="playbook-track">
+                    <article class="playbook-step reveal">
+                        <span>01</span>
+                        <h3 data-i18n="playbook.stepOne.title">Entender</h3>
+                        <p data-i18n="playbook.stepOne.text">Levanto contexto, entorno, pasos y comportamiento esperado antes de proponer una solución.</p>
+                    </article>
+                    <article class="playbook-step reveal">
+                        <span>02</span>
+                        <h3 data-i18n="playbook.stepTwo.title">Priorizar</h3>
+                        <p data-i18n="playbook.stepTwo.text">Cruzo severidad, alcance, frecuencia y riesgo para enfocar esfuerzo donde cambia la experiencia.</p>
+                    </article>
+                    <article class="playbook-step reveal">
+                        <span>03</span>
+                        <h3 data-i18n="playbook.stepThree.title">Resolver y validar</h3>
+                        <p data-i18n="playbook.stepThree.text">Uso desarrollo e IA como aceleradores, luego valido funcionalidad, regresión, idioma y datos.</p>
+                    </article>
+                    <article class="playbook-step reveal">
+                        <span>04</span>
+                        <h3 data-i18n="playbook.stepFour.title">Dejar sistema</h3>
+                        <p data-i18n="playbook.stepFour.text">Convierto hallazgos en evidencia, criterios de aceptación, checklists y aprendizaje reutilizable.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <article class="project-card reveal">
-                    <div class="project-visual delivery-visual" aria-hidden="true">
-                        <div class="route-line"></div>
-                        <span class="route-dot start"></span>
-                        <span class="route-dot middle"></span>
-                        <span class="route-dot end"></span>
-                        <div class="package-box"></div>
-                    </div>
+        <section id="stack" class="stack-section section">
+            <div class="shell">
+                <div class="section-intro reveal">
+                    <p class="section-number">06 / <span data-i18n="stack.eyebrow">Stack</span></p>
                     <div>
-                        <p class="project-type">Web App + Tracking</p>
-                        <h3 data-i18n="projects.deliveryTitle">projects.deliveryTitle</h3>
-                        <p data-i18n="projects.deliveryTextOne">projects.deliveryTextOne</p>
-                        <p data-i18n="projects.deliveryTextTwo">projects.deliveryTextTwo</p>
-                        <div class="chips">
-                            <span data-i18n="projects.deliveryChipOne">projects.deliveryChipOne</span><span>Tracking</span><span>Admin</span><span data-i18n="projects.deliveryChipFour">projects.deliveryChipFour</span>
+                        <h2 data-i18n="stack.title">Herramientas elegidas por el problema, no por la moda.</h2>
+                        <p data-i18n="stack.lead">Cinco áreas que se conectan para desarrollar, validar, medir y automatizar.</p>
+                    </div>
+                </div>
+
+                <div class="stack-console reveal">
+                    <div class="stack-tabs" role="tablist" aria-label="Áreas de especialidad" data-i18n-attr="aria-label:stack.tabsAria">
+                        <button id="stack-tab-qa" class="stack-tab active" type="button" role="tab" aria-selected="true" aria-controls="stack-qa" data-stack="qa" data-i18n="stack.qa.tab">Producto & QA</button>
+                        <button id="stack-tab-data" class="stack-tab" type="button" role="tab" aria-selected="false" aria-controls="stack-data" tabindex="-1" data-stack="data" data-i18n="stack.data.tab">Datos</button>
+                        <button id="stack-tab-dev" class="stack-tab" type="button" role="tab" aria-selected="false" aria-controls="stack-dev" tabindex="-1" data-stack="dev" data-i18n="stack.dev.tab">Desarrollo</button>
+                        <button id="stack-tab-cloud" class="stack-tab" type="button" role="tab" aria-selected="false" aria-controls="stack-cloud" tabindex="-1" data-stack="cloud" data-i18n="stack.cloud.tab">Cloud & Automatización</button>
+                        <button id="stack-tab-ai" class="stack-tab" type="button" role="tab" aria-selected="false" aria-controls="stack-ai" tabindex="-1" data-stack="ai" data-i18n="stack.ai.tab">IA aplicada</button>
+                    </div>
+
+                    <div class="stack-panels">
+                        <article id="stack-qa" class="stack-panel active" role="tabpanel" aria-labelledby="stack-tab-qa" data-stack-panel="qa">
+                            <div class="stack-copy">
+                                <span>01 / Product Quality</span>
+                                <h3 data-i18n="stack.qa.title">Calidad que acompaña el ciclo completo.</h3>
+                                <p data-i18n="stack.qa.text">Desde reproducir la incidencia hasta comprobar que la solución funciona en estados, idiomas y flujos vecinos.</p>
+                            </div>
+                            <div class="tool-grid">
+                                <span>Functional testing</span><span>Regression</span><span>Severity</span><span>Issue documentation</span><span>i18n</span><span>UX validation</span>
+                            </div>
+                        </article>
+                        <article id="stack-data" class="stack-panel" role="tabpanel" aria-labelledby="stack-tab-data" data-stack-panel="data" hidden>
+                            <div class="stack-copy">
+                                <span>02 / Data</span>
+                                <h3 data-i18n="stack.data.title">Datos convertidos en decisiones legibles.</h3>
+                                <p data-i18n="stack.data.text">Limpieza, validación, análisis y reporting para detectar patrones y sostener una recomendación.</p>
+                            </div>
+                            <div class="tool-grid">
+                                <span>SQL</span><span>Power BI</span><span>Excel avanzado</span><span>ETL</span><span>Data validation</span><span>Reporting</span>
+                            </div>
+                        </article>
+                        <article id="stack-dev" class="stack-panel" role="tabpanel" aria-labelledby="stack-tab-dev" data-stack-panel="dev" hidden>
+                            <div class="stack-copy">
+                                <span>03 / Development</span>
+                                <h3 data-i18n="stack.dev.title">Código para materializar y probar una idea.</h3>
+                                <p data-i18n="stack.dev.text">Desarrollo web, scripting y control de versiones para pasar de hipótesis a una solución comprobable.</p>
+                            </div>
+                            <div class="tool-grid">
+                                <span>JavaScript</span><span>Python</span><span>HTML / CSS</span><span>Git</span><span>GitHub</span><span>Astro</span>
+                            </div>
+                        </article>
+                        <article id="stack-cloud" class="stack-panel" role="tabpanel" aria-labelledby="stack-tab-cloud" data-stack-panel="cloud" hidden>
+                            <div class="stack-copy">
+                                <span>04 / Serverless</span>
+                                <h3 data-i18n="stack.cloud.title">Automatización ligera, persistente y observable.</h3>
+                                <p data-i18n="stack.cloud.text">Integraciones que procesan información, mantienen estado y activan acciones sin infraestructura pesada.</p>
+                            </div>
+                            <div class="tool-grid">
+                                <span>Cloudflare Workers</span><span>Cloudflare KV</span><span>REST APIs</span><span>Telegram Bot API</span><span>Cron triggers</span><span>Wrangler</span>
+                            </div>
+                        </article>
+                        <article id="stack-ai" class="stack-panel" role="tabpanel" aria-labelledby="stack-tab-ai" data-stack-panel="ai" hidden>
+                            <div class="stack-copy">
+                                <span>05 / Applied AI</span>
+                                <h3 data-i18n="stack.ai.title">IA como multiplicador de criterio.</h3>
+                                <p data-i18n="stack.ai.text">La uso para explorar hipótesis, revisar edge cases, desarrollar y documentar; la decisión final sigue siendo humana y verificable.</p>
+                            </div>
+                            <div class="tool-grid">
+                                <span>Codex</span><span>Claude</span><span>Prompt engineering</span><span>Edge-case analysis</span><span>AI-assisted development</span><span>Technical review</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="soft-skills reveal">
+                    <span data-i18n="stack.soft.label">Cómo colaboro</span>
+                    <p data-i18n="stack.soft.value">Pensamiento analítico · comunicación efectiva · organización · seguimiento · resolución de problemas</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion" class="education-section section">
+            <div class="shell education-layout">
+                <div class="education-heading reveal">
+                    <p class="section-number">07 / <span data-i18n="education.eyebrow">Formación</span></p>
+                    <h2 data-i18n="education.title">Ingeniería para conectar negocio, procesos y tecnología.</h2>
+                </div>
+                <div class="education-list">
+                    <article class="education-item reveal">
+                        <span data-i18n="education.degree.date">Ago 2022 - Actualidad</span>
+                        <div>
+                            <h3 data-i18n="education.degree.title">Ingeniería Empresarial y de Sistemas</h3>
+                            <p data-i18n="education.degree.school">Universidad Científica del Sur</p>
                         </div>
-                    </div>
-                </article>
+                        <strong data-i18n="education.degree.badge">Top 10% académico</strong>
+                    </article>
+                    <article class="education-item reveal">
+                        <span data-i18n="education.cisco.date">Jul 2025</span>
+                        <div>
+                            <h3>Data Analytics Essentials</h3>
+                            <p>Cisco Networking Academy</p>
+                        </div>
+                        <strong>ETL · SQL · Analytics</strong>
+                    </article>
+                    <article class="education-item reveal">
+                        <span data-i18n="education.languages.label">Idiomas</span>
+                        <div>
+                            <h3 data-i18n="education.languages.title">Español nativo · Inglés funcional</h3>
+                            <p data-i18n="education.languages.text">Formación Cambridge en el Centro de Idiomas UCSUR; lectura técnica y comunicación funcional.</p>
+                        </div>
+                        <strong>ES / EN</strong>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="built" class="built section-band">
-            <div class="section-heading reveal">
-                <p class="eyebrow" data-i18n="built.eyebrow">built.eyebrow</p>
-                <h2 data-i18n="built.title">built.title</h2>
-            </div>
-            <div class="built-grid">
-                <article class="built-card reveal">
-                    <div class="built-card-head">
-                        <img class="built-logo simplexity-logo" src="assets/logos/simplexitylab-logo.png" alt="SimplexityLab">
-                        <span class="project-type">Astro + Frontend</span>
+        <section id="contacto" class="contact-section">
+            <div class="shell contact-layout">
+                <div class="contact-copy reveal">
+                    <p class="section-number">08 / <span data-i18n="contact.eyebrow">Contacto</span></p>
+                    <h2 data-i18n="contact.title">Construyamos producto con mejor calidad, datos y criterio.</h2>
+                    <p data-i18n="contact.text">Estoy abierto a conversaciones sobre producto, QA, automatización y analítica aplicada.</p>
+                </div>
+                <div class="contact-actions reveal">
+                    <a class="contact-email" href="mailto:josephmorenoinca@gmail.com">josephmorenoinca@gmail.com</a>
+                    <div>
+                        <a class="button button-light" href="https://linkedin.com/in/josephinca" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a class="button button-outline-light" href="assets/documents/joseph-moreno-cv.pdf" download data-i18n="contact.cvCta">Descargar CV</a>
                     </div>
-                    <h3 data-i18n="built.simplexityTitle">built.simplexityTitle</h3>
-                    <p data-i18n="built.simplexityText">built.simplexityText</p>
-                    <div class="chips">
-                        <span>Astro</span><span>UX</span><span>Responsive</span><span>Contenido ejecutivo</span>
-                    </div>
-                    <a class="project-link" href="https://www.simplexitylab.com/" target="_blank" rel="noreferrer" data-i18n="built.simplexityCta">built.simplexityCta</a>
-                </article>
-                <article class="built-card reveal">
-                    <div class="built-card-head">
-                        <img class="built-logo acelera-logo" src="assets/logos/acelera-logo.png" alt="Acelera">
-                        <span class="project-type">Astro + i18n</span>
-                    </div>
-                    <h3 data-i18n="built.aceleraTitle">built.aceleraTitle</h3>
-                    <p data-i18n="built.aceleraText">built.aceleraText</p>
-                    <div class="chips">
-                        <span>Astro</span><span>i18n</span><span>Landing SaaS</span><span>SEO</span>
-                    </div>
-                    <a class="project-link" href="https://acelera.io/" target="_blank" rel="noreferrer" data-i18n="built.aceleraCta">built.aceleraCta</a>
-                </article>
-                <article id="erp-mockup" class="built-card reveal">
-                    <span class="project-type">ERP + Producto interno</span>
-                    <h3 data-i18n="built.erpTitle">built.erpTitle</h3>
-                    <p data-i18n="built.erpText">built.erpText</p>
-                    <div class="chips">
-                        <span>ERP</span><span>Procesos</span><span>Roles</span><span>Mockup</span>
-                    </div>
-                    <a class="project-link" href="erp.html" data-i18n="built.erpCta">built.erpCta</a>
-                </article>
-            </div>
-        </section>
-
-        <section id="studies" class="studies section-band">
-            <div class="section-heading reveal">
-                <p class="eyebrow" data-i18n="studies.eyebrow">studies.eyebrow</p>
-                <h2 data-i18n="studies.title">studies.title</h2>
-            </div>
-            <div class="study-grid">
-                <article class="study-card reveal">
-                    <span class="date" data-i18n="studies.degreeDate">studies.degreeDate</span>
-                    <h3 data-i18n="studies.degreeTitle">studies.degreeTitle</h3>
-                    <p data-i18n="studies.degreeText">studies.degreeText</p>
-                </article>
-                <article class="study-card reveal">
-                    <span class="date" data-i18n="studies.ciscoDate">studies.ciscoDate</span>
-                    <h3 data-i18n="studies.ciscoTitle">studies.ciscoTitle</h3>
-                    <p data-i18n="studies.ciscoText">studies.ciscoText</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="playbook" class="playbook section-band">
-            <div class="section-heading reveal">
-                <p class="eyebrow" data-i18n="playbook.eyebrow">playbook.eyebrow</p>
-                <h2 data-i18n="playbook.title">playbook.title</h2>
-            </div>
-            <div class="playbook-grid">
-                <article class="playbook-card reveal">
-                    <span class="step-number">01</span>
-                    <h3 data-i18n="playbook.stepOneTitle">playbook.stepOneTitle</h3>
-                    <p data-i18n="playbook.stepOneText">playbook.stepOneText</p>
-                </article>
-                <article class="playbook-card reveal">
-                    <span class="step-number">02</span>
-                    <h3 data-i18n="playbook.stepTwoTitle">playbook.stepTwoTitle</h3>
-                    <p data-i18n="playbook.stepTwoText">playbook.stepTwoText</p>
-                </article>
-                <article class="playbook-card reveal">
-                    <span class="step-number">03</span>
-                    <h3 data-i18n="playbook.stepThreeTitle">playbook.stepThreeTitle</h3>
-                    <p data-i18n="playbook.stepThreeText">playbook.stepThreeText</p>
-                </article>
-                <article class="playbook-card reveal">
-                    <span class="step-number">04</span>
-                    <h3 data-i18n="playbook.stepFourTitle">playbook.stepFourTitle</h3>
-                    <p data-i18n="playbook.stepFourText">playbook.stepFourText</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="skills" class="skills section-band">
-            <div class="section-heading reveal">
-                <p class="eyebrow" data-i18n="skills.eyebrow">skills.eyebrow</p>
-                <h2 data-i18n="skills.title">skills.title</h2>
-            </div>
-            <div class="skill-controls reveal" aria-label="skills.filtersAria" data-i18n-attr="aria-label:skills.filtersAria">
-                <button class="filter active" type="button" data-filter="all" data-i18n="skills.filterAll">skills.filterAll</button>
-                <button class="filter" type="button" data-filter="qa">QA</button>
-                <button class="filter" type="button" data-filter="data">Data</button>
-                <button class="filter" type="button" data-filter="dev">Dev</button>
-                <button class="filter" type="button" data-filter="cloud">Cloud</button>
-                <button class="filter" type="button" data-filter="ai" data-i18n="skills.filterAi">skills.filterAi</button>
-                <button class="filter" type="button" data-filter="soft">Soft</button>
-            </div>
-            <div class="skill-list reveal">
-                <span data-category="data">SQL Intermedio</span>
-                <span data-category="data">Python</span>
-                <span data-category="data">Power BI</span>
-                <span data-category="data">Excel Avanzado</span>
-                <span data-category="data">ETL & APIs</span>
-                <span data-category="qa" data-i18n="skills.dataValidation">skills.dataValidation</span>
-                <span data-category="qa" data-i18n="skills.functionalTesting">skills.functionalTesting</span>
-                <span data-category="qa" data-i18n="skills.regression">skills.regression</span>
-                <span data-category="qa" data-i18n="skills.severity">skills.severity</span>
-                <span data-category="qa" data-i18n="skills.i18n">skills.i18n</span>
-                <span data-category="qa" data-i18n="skills.issueDocs">skills.issueDocs</span>
-                <span data-category="dev">JavaScript</span>
-                <span data-category="dev">Git / GitHub</span>
-                <span data-category="cloud">Cloudflare Workers</span>
-                <span data-category="cloud">Cloudflare KV</span>
-                <span data-category="cloud">Cron Triggers</span>
-                <span data-category="cloud">Telegram Bot API</span>
-                <span data-category="dev">HTML parsing / scraping</span>
-                <span data-category="ai">Codex</span>
-                <span data-category="ai">Claude</span>
-                <span data-category="ai" data-i18n="skills.aiDevelopment">skills.aiDevelopment</span>
-                <span data-category="ai" data-i18n="skills.promptEngineering">skills.promptEngineering</span>
-                <span data-category="ai" data-i18n="skills.aiEdgeCases">skills.aiEdgeCases</span>
-                <span data-category="soft" data-i18n="skills.communication">skills.communication</span>
-                <span data-category="soft" data-i18n="skills.problemSolving">skills.problemSolving</span>
-                <span data-category="soft" data-i18n="skills.organization">skills.organization</span>
-                <span data-category="soft" data-i18n="skills.english">skills.english</span>
-            </div>
-        </section>
-
-        <section id="languages" class="languages section-band">
-            <div class="section-heading reveal">
-                <p class="eyebrow" data-i18n="languages.eyebrow">languages.eyebrow</p>
-                <h2 data-i18n="languages.title">languages.title</h2>
-            </div>
-            <div class="language-grid">
-                <article class="language-card reveal">
-                    <span class="language-level" data-i18n="languages.spanishLevel">languages.spanishLevel</span>
-                    <h3 data-i18n="languages.spanishTitle">languages.spanishTitle</h3>
-                    <p data-i18n="languages.spanishText">languages.spanishText</p>
-                </article>
-                <article class="language-card reveal">
-                    <span class="language-level">B2</span>
-                    <h3 data-i18n="languages.englishTitle">languages.englishTitle</h3>
-                    <p data-i18n="languages.englishText">languages.englishText</p>
-                </article>
-                <article class="language-card reveal">
-                    <span class="language-level">i18n</span>
-                    <h3 data-i18n="languages.siteTitle">languages.siteTitle</h3>
-                    <p data-i18n="languages.siteText">languages.siteText</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact" class="contact section-band">
-            <div class="contact-copy reveal">
-                <p class="eyebrow" data-i18n="contact.eyebrow">contact.eyebrow</p>
-                <h2 data-i18n="contact.title">contact.title</h2>
-                <p data-i18n="contact.text">contact.text</p>
-            </div>
-            <div class="contact-actions reveal">
-                <a class="button primary" href="mailto:josephmorenoinca@gmail.com">josephmorenoinca@gmail.com</a>
-                <a class="button ghost" href="https://linkedin.com/in/josephinca" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <span data-i18n="contact.location">Lima, Perú · Disponible para oportunidades y colaboraciones</span>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="shell">
+            <span>© <span data-current-year>2026</span> Joseph Moreno Inca</span>
+            <span data-i18n="footer.note">Diseñado como producto. Validado con criterio.</span>
+            <a href="#inicio" data-i18n="footer.backToTop">Volver arriba</a>
+        </div>
+    </footer>
+
     <script src="src/scripts/i18n.js"></script>
     <script src="src/scripts/main.js"></script>
 </body>
